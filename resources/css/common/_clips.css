@@ -1,0 +1,5 @@
+.clip-sun {
+  clip-path: url(#clip-sun);
+  aspect-ratio: 2;
+  object-fit: cover;
+}

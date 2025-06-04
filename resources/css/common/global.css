@@ -1,0 +1,43 @@
+@import './_fonts';
+@import './_type';
+@import './_content.css';
+@import './_clips.css';
+@import './_pagination';
+@import './_sidebar';
+@import './_contact-form-7';
+
+@import './blocks/button.css';
+@import './blocks/details.css';
+@import './blocks/embed.css';
+@import './blocks/file.css';
+@import './blocks/prose.css';
+@import './blocks/quote.css';
+@import './blocks/table.css';
+
+p.is-style-large {
+  @apply type-lg mb-2;
+}
+
+img:not([src]) {
+  display: none;
+}
+
+[x-cloak] {
+  display: none;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+a.active {
+  font-weight: bold;
+}
+
+.prose p > :where(a):not([class~='not-prose']) {
+  @apply transition-all font-bold antialiased decoration-black/20 hover:decoration-black/70;
+}
+
+:root :where(a:where(:not(.wp-element-button))) {
+  text-decoration-line: none;
+}

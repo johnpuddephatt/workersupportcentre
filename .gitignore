@@ -1,0 +1,5 @@
+/node_modules
+/vendor
+!/public/.gitkeep
+.env
+npm-debug.log

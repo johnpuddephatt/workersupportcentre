@@ -1,0 +1,109 @@
+/* Contact Form 7 - Square Black Border Styles */
+
+.wp-block-contact-form-7-contact-form-selector {
+  @apply bg-beige py-16 w-full;
+  max-width: none !important;
+}
+
+.wp-block-hero + .wp-block-contact-form-7-contact-form-selector {
+  @apply pt-0;
+}
+
+.wpcf7-form {
+  @apply xl:columns-2 gap-12 container;
+}
+
+/* Text inputs, email, tel, url, number, date inputs */
+.wpcf7-form-control.wpcf7-text,
+.wpcf7-form-control.wpcf7-email,
+.wpcf7-form-control.wpcf7-tel,
+.wpcf7-form-control.wpcf7-url,
+.wpcf7-form-control.wpcf7-number,
+.wpcf7-form-control.wpcf7-date {
+  border-radius: 0;
+  @apply mt-2 block;
+
+  padding: 8px 12px;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+/* Textarea */
+.wpcf7-form-control.wpcf7-textarea {
+  @apply mt-2 block p-8 leading-tight;
+  border-radius: 0;
+
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Select dropdown */
+.wpcf7-form-control.wpcf7-select {
+  border-radius: 0;
+  padding: 8px 12px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+/* Submit button */
+.wpcf7-form-control.wpcf7-submit {
+  @apply flex gap-6 items-center transition duration-500 ml-auto border border-transparent rounded-full pl-4 font-bold;
+}
+
+.wpcf7-form-control.wpcf7-submit:hover {
+  @apply border-black;
+}
+
+.wpcf7-form-control.wpcf7-submit:hover::after {
+  @apply translate-x-0;
+}
+
+.wpcf7-form-control.wpcf7-submit::after {
+  @apply w-12 h-12  bg-lime  -translate-x-2 transition duration-500;
+  content: '';
+  border-radius: 999px;
+  display: block;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBjbGFzcz0ic2l6ZS02Ij4KICA8cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik0xMy41IDQuNSAyMSAxMm0wIDAtNy41IDcuNU0yMSAxMkgzIiAvPgo8L3N2Zz4=');
+  background-size: 2rem 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wpcf7-form-control.wpcf7-submit:hover {
+  background-color: #f0f0f0;
+}
+
+/* Focus states */
+.wpcf7-form-control:focus {
+  outline: none;
+  border-color: #000;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Form labels */
+.wpcf7 label {
+  @apply block font-bold mb-8;
+  break-inside: avoid;
+}
+
+/* Form paragraphs spacing */
+.wpcf7 p {
+  margin-bottom: 15px;
+}
+
+/* Remove default validation styling */
+.wpcf7-form-control.wpcf7-not-valid {
+  border-color: #000;
+}
+
+/* Optional: Style for required field asterisks */
+.wpcf7 .required {
+  color: #000;
+}

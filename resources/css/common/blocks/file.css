@@ -1,0 +1,7 @@
+.wp-block-file:not(.wp-element-button) {
+  @apply !text-base;
+}
+
+.acf-block-component.wp-block-file > div {
+  @apply !w-full;
+}

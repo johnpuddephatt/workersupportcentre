@@ -1,0 +1,196 @@
+{
+  "__processed__": "This file was generated using Vite",
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "layout": {
+      "contentSize": "56rem",
+      "wideSize": "84rem"
+    },
+    "background": {
+      "backgroundImage": true
+    },
+    "color": {
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "duotone": [],
+      "palette": [
+        {
+          "name": "White",
+          "slug": "white",
+          "color": "#fff"
+        },
+        {
+          "name": "Black",
+          "slug": "black",
+          "color": "#1d3431"
+        },
+        {
+          "name": "Orange",
+          "slug": "orange",
+          "color": "#ff661f"
+        },
+        {
+          "name": "Lime",
+          "slug": "lime",
+          "color": "#caeb61"
+        },
+        {
+          "name": "Beige",
+          "slug": "beige",
+          "color": "#efeae4"
+        },
+        {
+          "name": "Mint",
+          "slug": "mint",
+          "color": "#d6eddb"
+        },
+        {
+          "name": "Teal",
+          "slug": "teal",
+          "color": "#305754"
+        },
+        {
+          "name": "Peach",
+          "slug": "peach",
+          "color": "#fde1d3"
+        }
+      ]
+    },
+    "custom": {
+      "spacing": {},
+      "typography": {
+        "font-size": {},
+        "line-height": {}
+      }
+    },
+    "spacing": {
+      "padding": true,
+      "units": [
+        "px",
+        "%",
+        "em",
+        "rem",
+        "vw",
+        "vh"
+      ]
+    },
+    "typography": {
+      "defaultFontSizes": false,
+      "customFontSize": false,
+      "fontFamilies": [
+        {
+          "name": "sans",
+          "slug": "sans",
+          "fontFamily": "WSCsans,sans-serif"
+        },
+        {
+          "name": "serif",
+          "slug": "serif",
+          "fontFamily": "WSCserif,serif"
+        },
+        {
+          "name": "mono",
+          "slug": "mono",
+          "fontFamily": "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace"
+        }
+      ],
+      "fontSizes": [
+        {
+          "name": "shadow-2xs",
+          "slug": "shadow-2xs",
+          "size": "0px 1px 0px #00000026"
+        },
+        {
+          "name": "shadow-xs",
+          "slug": "shadow-xs",
+          "size": "0px 1px 1px #0003"
+        },
+        {
+          "name": "shadow-sm",
+          "slug": "shadow-sm",
+          "size": "0px 1px 0px #00000013,0px 1px 1px #00000013,0px 2px 2px #00000013"
+        },
+        {
+          "name": "shadow-md",
+          "slug": "shadow-md",
+          "size": "0px 1px 1px #0000001a,0px 1px 2px #0000001a,0px 2px 4px #0000001a"
+        },
+        {
+          "name": "shadow-lg",
+          "slug": "shadow-lg",
+          "size": "0px 1px 2px #0000001a,0px 3px 2px #0000001a,0px 4px 8px #0000001a"
+        },
+        {
+          "name": "xs",
+          "slug": "xs",
+          "size": ".75rem"
+        },
+        {
+          "name": "sm",
+          "slug": "sm",
+          "size": ".875rem"
+        },
+        {
+          "name": "base",
+          "slug": "base",
+          "size": "1rem"
+        },
+        {
+          "name": "lg",
+          "slug": "lg",
+          "size": "1.125rem"
+        },
+        {
+          "name": "xl",
+          "slug": "xl",
+          "size": "1.25rem"
+        },
+        {
+          "name": "2xl",
+          "slug": "2xl",
+          "size": "1.5rem"
+        },
+        {
+          "name": "3xl",
+          "slug": "3xl",
+          "size": "1.875rem"
+        },
+        {
+          "name": "4xl",
+          "slug": "4xl",
+          "size": "2.25rem"
+        },
+        {
+          "name": "5xl",
+          "slug": "5xl",
+          "size": "3rem"
+        },
+        {
+          "name": "6xl",
+          "slug": "6xl",
+          "size": "3.75rem"
+        },
+        {
+          "name": "7xl",
+          "slug": "7xl",
+          "size": "4.5rem"
+        },
+        {
+          "name": "8xl",
+          "slug": "8xl",
+          "size": "6rem"
+        },
+        {
+          "name": "9xl",
+          "slug": "9xl",
+          "size": "8rem"
+        }
+      ]
+    }
+  }
+}

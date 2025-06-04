@@ -1,0 +1,29 @@
+import domReady from '@wordpress/dom-ready';
+
+domReady(() => {});
+
+window.addEventListener('load', function () {
+  wp.blocks.unregisterBlockType('core/verse');
+  wp.blocks.unregisterBlockType('core/cover');
+  wp.blocks.unregisterBlockType('core/file');
+  wp.blocks.unregisterBlockType('core/more');
+  wp.blocks.unregisterBlockType('core/code');
+  wp.blocks.unregisterBlockType('core/social-links');
+  wp.blocks.unregisterBlockType('core/nextpage');
+  wp.blocks.unregisterBlockType('core/preformatted');
+
+  wp.blocks.unregisterBlockType('core/archives');
+  wp.blocks.unregisterBlockType('core/categories');
+  wp.blocks.unregisterBlockType('core/calendar');
+  wp.blocks.unregisterBlockType('core/tag-cloud');
+  wp.blocks.unregisterBlockType('core/rss');
+  wp.blocks.unregisterBlockType('core/search');
+  wp.blocks.unregisterBlockType('core/latest-posts');
+  wp.blocks.unregisterBlockType('core/latest-comments');
+  wp.blocks.unregisterBlockType('core/media-text');
+
+  wp.blocks.unregisterBlockType('core/archives');
+  wp.blocks.unregisterBlockType('core/freeform');
+  wp.blocks.unregisterBlockType('core/freeform');
+  wp.blocks.unregisterBlockType('core/page-list');
+});

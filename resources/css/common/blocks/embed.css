@@ -1,0 +1,13 @@
+.page-content iframe[src*='youtube.com'],
+.page-content iframe[src*='youtube-nocookie.com'],
+.page-content iframe[src*='vimeo.com'] {
+  @apply aspect-video h-auto w-full rounded;
+}
+
+.embedded-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,23 @@
+@utility type-2xl {
+  @apply text-3xl lg:text-4xl xl:text-5xl font-serif !font-normal leading-[1.4] tracking-tighter;
+}
+
+@utility type-underlined {
+  @apply underline decoration-orange decoration-1 !font-normal  !leading-[1.6] underline-offset-[0.4em];
+}
+
+@utility type-xl {
+  @apply text-xl md:text-2xl lg:text-3xl xl:text-4xl font-serif !leading-[1.3] tracking-tight;
+}
+
+@utility type-lg {
+  @apply text-lg xl:text-xl font-semibold leading-tight;
+}
+
+@utility type-sm {
+  @apply xl:text-lg font-bold leading-tight;
+}
+
+@utility type-xs {
+  @apply text-sm font-bold leading-tight;
+}

@@ -1,0 +1,28 @@
+.prose > h1,
+h1.wp-block-heading {
+  @apply type-2xl;
+}
+
+.prose > h2,
+.prose .toc-heading,
+h2.wp-block-heading {
+  @apply type-2xl mt-16 mb-12;
+}
+
+.prose > h3,
+h3.wp-block-heading {
+  @apply font-bold leading-snug;
+}
+
+.prose h2:first-child:not(.toc-heading) {
+  @apply mt-0;
+}
+
+.prose .group:first-child h2 {
+  @apply mt-4;
+}
+
+.prose > p:last-child,
+.prose > .acf-innerblocks-container > p:last-child {
+  @apply mb-0;
+}

@@ -1,0 +1,63 @@
+.page-content > *,
+.post-content > * {
+  max-width: var(--wp--style--global--content-size);
+}
+
+.page-content .wp-block,
+.w-content {
+  max-width: var(--wp--style--global--content-size);
+}
+
+.alignwide,
+.page-content > .alignwide,
+.alignwide > .wp-block {
+  max-width: var(--wp--style--global--wide-size);
+  @apply mx-auto;
+}
+
+.alignfull,
+.page-content > .alignfull,
+.alignfull > .wp-block {
+  @apply max-w-full px-0;
+}
+
+.post-content,
+.page-content {
+  @apply max-w-none min-h-[70vh];
+}
+
+.post-content > :not(.wp-block-hero):first-child,
+.page-content > :not(.wp-block-hero):first-child,
+.page-content > .group:first-child > :not(.wp-block-hero):first-child,
+.post-content > .group:first-child > :not(.wp-block-hero):first-child {
+  @apply mt-0;
+}
+
+@media (min-width: 1024px) {
+  .page-template-default .post-content > *,
+  .page-template-default .page-content > *,
+  .page-template-template-fullwidth .post-content > *,
+  .page-template-template-fullwidth .page-content > * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.page-content > *:last-child {
+  @apply mb-0;
+}
+
+.page-template-template-fullwidth .page-content > h2,
+.page-template-template-fullwidth .page-content > h3,
+.page-template-template-fullwidth .page-content > h4,
+.page-template-template-fullwidth .page-content > h5,
+.page-template-template-fullwidth .page-content > h6,
+.page-template-template-fullwidth .page-content > p,
+.page-template-template-fullwidth .page-content > ul,
+.page-template-template-fullwidth .page-content > ol {
+  @apply px-4 md:px-8;
+}
+
+.alignwide {
+  @apply container;
+}

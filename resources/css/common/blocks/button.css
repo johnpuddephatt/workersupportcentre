@@ -1,0 +1,7 @@
+.wp-block-button .wp-block-button__link {
+  @apply border-2 rounded px-4 py-2 bg-transparent text-black font-semibold;
+}
+
+.wp-block-hero .wp-block-buttons {
+  @apply mt-8;
+}

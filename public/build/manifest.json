@@ -1,0 +1,52 @@
+{
+  "editor.deps.json": {
+    "file": "assets/editor.deps-DxpY22xl.json",
+    "src": "editor.deps.json"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-BYLonYol.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/editor.css": {
+    "file": "assets/editor-BQXvXaAM.css",
+    "src": "resources/css/editor.css",
+    "isEntry": true
+  },
+  "resources/fonts/WSCsans_Bd.woff2": {
+    "file": "assets/WSCsans_Bd-CAPfXH91.woff2",
+    "src": "resources/fonts/WSCsans_Bd.woff2"
+  },
+  "resources/fonts/WSCsans_Blk.woff2": {
+    "file": "assets/WSCsans_Blk-DqpDGIYG.woff2",
+    "src": "resources/fonts/WSCsans_Blk.woff2"
+  },
+  "resources/fonts/WSCsans_Md.ttf": {
+    "file": "assets/WSCsans_Md-DgeC7I25.ttf",
+    "src": "resources/fonts/WSCsans_Md.ttf"
+  },
+  "resources/fonts/WSCsans_Md.woff2": {
+    "file": "assets/WSCsans_Md-CVf_EYAQ.woff2",
+    "src": "resources/fonts/WSCsans_Md.woff2"
+  },
+  "resources/fonts/WSCsans_SBd.woff2": {
+    "file": "assets/WSCsans_SBd-C_CXTj7E.woff2",
+    "src": "resources/fonts/WSCsans_SBd.woff2"
+  },
+  "resources/fonts/WSCserif.woff2": {
+    "file": "assets/WSCserif-BixmL40U.woff2",
+    "src": "resources/fonts/WSCserif.woff2"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CCILLHoD.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/editor.js": {
+    "file": "assets/editor-CvciiCKR.js",
+    "name": "editor",
+    "src": "resources/js/editor.js",
+    "isEntry": true
+  }
+}

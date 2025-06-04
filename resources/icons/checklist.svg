@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 11.35 14.73">
+    
+    <g fill="none" stroke="currentColor" stroke-width=".6px">
+        
+
+    <path d="M.3.3H11.05V14.430000000000001H.3z" class="prefix__cls-1"/>
+    <circle cx="2.32" cy="6.01" r=".66" class="prefix__cls-1"/>
+    <circle cx="2.32" cy="8.83" r=".66" class="prefix__cls-1"/>
+    <circle cx="2.32" cy="11.72" r=".66" class="prefix__cls-1"/>
+    <path d="M4.01 5.95 9.36 5.95" class="prefix__cls-1"/>
+    <path d="M4.01 8.83 9.36 8.83" class="prefix__cls-1"/>
+    <path d="M4.01 11.72 9.36 11.72" class="prefix__cls-1"/>
+    </g>
+</svg>

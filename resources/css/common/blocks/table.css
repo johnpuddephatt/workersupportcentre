@@ -1,0 +1,16 @@
+.wp-block-table table {
+  @apply border-collapse border-white bg-beige;
+}
+
+.wp-block-table table.has-blue-background-color th {
+  @apply text-white;
+}
+
+.wp-block-table td,
+.wp-block-table th {
+  @apply border-white border-8  px-4 py-2 bg-white/70;
+}
+
+.wp-block-table th {
+  @apply bg-transparent;
+}

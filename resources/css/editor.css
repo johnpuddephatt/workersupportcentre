@@ -1,0 +1,44 @@
+@layer theme, base, components, utilities;
+
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/preflight.css' layer(base);
+@import 'tailwindcss/utilities.css';
+
+@import './common/global.css';
+
+@import './_tailwind-config.css';
+
+.editor-visual-editor a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+[data-toolbar='simple'] iframe {
+  height: 100px !important;
+  min-height: 100px !important;
+}
+
+[data-toolbar='simple'] .mce-statusbar {
+  display: none;
+}
+
+.editor-styles-wrapper {
+  @apply font-sans 2xl:text-lg text-black prose max-w-none;
+}
+
+.acf-block-preview a {
+  @apply pointer-events-none;
+}
+
+/* .is-root-container {
+  @apply prose max-w-none;
+} */
+
+/* .wp-block {
+  max-width: var(--wp--style--global--content-size);
+  @apply mx-auto !important;
+} */
+
+.editor-post-title__input {
+  @apply text-4xl bg-black/5 rounded p-4 mt-16 mb-12 font-normal;
+}

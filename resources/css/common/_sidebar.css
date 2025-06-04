@@ -1,0 +1,24 @@
+.page-sidebar-tree a:hover {
+  @apply no-underline;
+}
+
+.page-sidebar-tree li a {
+  @apply container block py-4 text-xl font-semibold transition;
+}
+
+.page-sidebar-tree .children {
+  @apply hidden;
+}
+
+.page-sidebar-tree .current_page_item > .children,
+.page-sidebar-tree .current_page_ancestor > .children {
+  @apply block;
+}
+
+.page-sidebar-tree .children li a {
+  @apply text-base gap-2 flex items-start before:mt-3 before:w-6 before:flex-none before:h-px before:bg-black/25;
+}
+
+.page-sidebar-tree .current_page_item > a {
+  @apply !bg-black/100;
+}

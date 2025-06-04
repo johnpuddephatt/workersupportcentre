@@ -1,0 +1,39 @@
+@font-face {
+  font-family: WSCserif;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../fonts/WSCserif.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: WSCsans;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../fonts/WSCsans_Md.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: WSCsans;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../../fonts/WSCsans_SBd.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: WSCsans;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../../fonts/WSCsans_Bd.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: WSCsans;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('../../fonts/WSCsans_Blk.woff2') format('woff2');
+}

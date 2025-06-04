@@ -1,0 +1,11 @@
+.page-numbers {
+  @apply w-10 h-10 !no-underline text-xl  inline-flex transition items-center justify-center rounded-full;
+}
+
+.page-numbers:hover {
+  @apply bg-black/20;
+}
+
+.page-numbers.current {
+  @apply bg-black/10 font-bold;
+}

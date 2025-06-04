@@ -1,0 +1,36 @@
+@source "../views/";
+@source "../../app/";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: 'WSCsans', 'sans-serif';
+  --font-serif: 'WSCserif', 'serif';
+  --color-*: initial;
+  --color-white: #fff;
+  --color-black: #1d3431;
+  --color-orange: #ff661f;
+  --color-lime: #caeb61;
+  --color-beige: #efeae4;
+  --color-mint: #d6eddb;
+  --color-teal: #305754;
+  --color-petrol: #1d3431;
+  --color-peach: #fde1d3;
+}
+
+@source inline("bg-white");
+@source inline("bg-lime");
+@source inline("bg-peach");
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+  max-width: var(--wp--style--global--wide-size);
+
+  @variant md {
+    padding-inline: 2rem;
+  }
+
+  /*@variant xl {
+    max-width: var(--wp--style--global--wide-size);
+  } */
+}
