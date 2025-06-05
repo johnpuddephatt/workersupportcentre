@@ -9,7 +9,7 @@
             default => 'items-stretch',
         } }}">
         @if ($image)
-            {!! wp_get_attachment_image($image, $image_crop == 'landscape' ? 'landscape' : 'square', false, [
+            {!! wp_get_attachment_image($image, $image_crop == 'landscape' ? 'landscape' : 'square-xl', false, [
                 'sizes' => '(min-width: 1200px) 40vw, (min-width: 800px) 55vw, 75vw',
                 'class' =>
                     'w-full ' .
