@@ -1,9 +1,10 @@
-<div class="wp-block container grid lg:grid-cols-2 my-16 gap-12 {{ $block->classes }}">
+<div
+    class="wp-block container grid lg:grid-cols-2 my-16 gap-12 {{ $block->classes }} {{ $align == 'center' ? 'items-center' : '' }}">
 
     <div
         class="{{ $block->style == 'flipped' ? 'order-2' : '' }} relative flex {{ match ($align) {
             'top' => 'items-start',
-            'center' => 'items-center',
+            'center' => '',
             'bottom' => 'items-end',
             default => 'items-stretch',
         } }}">
