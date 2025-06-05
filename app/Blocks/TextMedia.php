@@ -188,6 +188,7 @@ class TextMedia extends Block
                 'choices' => [
                     'stretch' => __('Stretch'),
                     'top' => __('Top'),
+                    'center' => __('Center'),
                     'bottom' => __('Bottom'),
                 ],
                 'default_value' => 'stretch',

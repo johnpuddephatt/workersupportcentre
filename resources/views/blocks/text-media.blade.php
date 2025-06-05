@@ -3,6 +3,7 @@
     <div
         class="{{ $block->style == 'flipped' ? 'order-2' : '' }} relative flex {{ match ($align) {
             'top' => 'items-start',
+            'center' => 'items-center',
             'bottom' => 'items-end',
             default => 'items-stretch',
         } }}">
@@ -11,7 +12,7 @@
                 'sizes' => '(min-width: 1200px) 40vw, (min-width: 800px) 55vw, 75vw',
                 'class' =>
                     'w-full ' .
-                    ($image_crop == 'circle' && $align !== 'stretch' ? 'rounded-full' : '') .
+                    ($image_crop == 'circle' && $align !== 'stretch' ? 'mx-auto max-w-sm rounded-full' : '') .
                     ' ' .
                     ($align == 'stretch' ? ' inset-0 absolute w-full h-full object-cover object-center' : ' '),
             ]) !!}
