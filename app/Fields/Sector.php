@@ -17,7 +17,7 @@ class Sector extends Field
         ]);
 
         $fields
-            ->setLocation('post_type', '==', 'sector');
+            ->setLocation('post_type', '==', 'foo');
 
         $fields
             ->addText('role_title');

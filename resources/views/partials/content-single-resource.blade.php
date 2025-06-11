@@ -31,7 +31,7 @@
 
         <div class="container">
 
-            @if (count($file_oembeds))
+            @if ($file_oembeds)
 
                 <h2 class="mb-8 mt-12 type-2xl">Videos &amp; media</h2>
 
@@ -52,7 +52,7 @@
                 </div>
             @endif
 
-            @if (count($file_uploads))
+            @if ($file_uploads)
 
                 <h2 class="mb-8 mt-12  type-2xl">Downloads</h2>
 
@@ -65,7 +65,7 @@
                 </div>
             @endif
 
-            @if (count($external_links))
+            @if ($external_links)
 
                 <h2 class="mb-8 mt-12 type-2xl">Links</h2>
 
