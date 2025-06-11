@@ -7,11 +7,18 @@
         @if ($block->style == 'grid')
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 @foreach ($people as $person)
-                    <div class="flex flex-col items-center">
-                        <div class="overflow-hidden mx-auto rounded-full">
-                            {!! get_the_post_thumbnail($person->ID, 'square', [
-                                'class' => 'h-auto mx-auto !my-0 block w-32 group-hover:scale-105 ease-in-out transition-transform duration-1000',
-                            ]) !!}
+                    <div class="flex flex-col">
+                        <div class="overflow-hidden rounded-full">
+                            @if (has_post_thumbnail($person->ID))
+                                {!! get_the_post_thumbnail($person->ID, 'square', [
+                                    'class' =>
+                                        'h-auto h-32 object-center !my-0 block w-32 group-hover:scale-105 ease-in-out transition-transform duration-1000',
+                                ]) !!}
+                            @else
+                                <div class="h-32 w-32 bg-beige ">
+
+                                </div>
+                            @endif
                         </div>
                         <h3 class="type-lg mt-4">{{ $person->post_title }}</h3>
                         <div class="font-normal">{{ get_field('role_title', $person->ID) }}</div>
@@ -27,17 +34,23 @@
                             class="not-prose group relative flex flex-row items-center gap-2 p-4 transition md:gap-4 md:p-6">
 
                             <div class="flex-none overflow-hidden rounded-full">
-                                {!! get_the_post_thumbnail($person->ID, 'square', [
-                                    'class' => ' h-auto !my-0 block w-32 group-hover:scale-105 ease-in-out transition-transform duration-1000',
-                                ]) !!}
-                            </div>
+                                @if (has_post_thumbnail($person->ID))
+                                    {!! get_the_post_thumbnail($person->ID, 'square', [
+                                        'class' =>
+                                            ' h-auto !my-0 block h-32 object-cover w-32 group-hover:scale-105 ease-in-out transition-transform duration-1000',
+                                    ]) !!}
+                                @else
+                                    <div class="h-32 w-32 bg-beige ">
 
-                            <div class="py-2">
-                                <h3 class="type-lg ">{{ $person->post_title }}</h3>
-                                <div class="font-normal">{{ get_field('role_title', $person->ID) }}</div>
-                            </div>
+                                    </div>
+                                @endif
 
-                            {{-- <div class="ml-auto rounded-full bg-white bg-opacity-60 p-4 transition group-hover:bg-opacity-100">
+                                <div class="py-2">
+                                    <h3 class="type-lg ">{{ $person->post_title }}</h3>
+                                    <div class="font-normal">{{ get_field('role_title', $person->ID) }}</div>
+                                </div>
+
+                                {{-- <div class="ml-auto rounded-full bg-white bg-opacity-60 p-4 transition group-hover:bg-opacity-100">
               <x-icon.plus x-show="!open" class="h-6 w-6 text-blue" />
               <x-icon.minus x-show="open" class="h-6 w-6 text-blue" />
             </div> --}}

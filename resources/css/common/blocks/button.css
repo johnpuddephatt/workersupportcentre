@@ -1,7 +1,36 @@
-.wp-block-button .wp-block-button__link {
-  @apply border-2 rounded px-4 py-2 bg-transparent text-black font-semibold;
-}
-
 .wp-block-hero .wp-block-buttons {
   @apply mt-8;
+}
+
+.wp-block-button__link {
+  @apply bg-transparent -translate-x-4 transition duration-500 font-semibold !p-0 text-black;
+}
+.wp-block-button {
+  @apply !flex gap-6 p-0 items-center text-black bg-transparent transition duration-500 ml-auto border border-transparent rounded-full pl-4 font-bold;
+}
+
+.wp-block-button:hover .wp-block-button__link {
+  @apply translate-x-0;
+}
+
+.wp-block-button:hover {
+  @apply border-lime !bg-lime/10;
+}
+
+.wp-block-button:hover::after {
+  @apply translate-x-0;
+}
+
+.wp-block-button::after {
+  @apply w-12 h-12 flex-none bg-lime  -translate-x-2 transition duration-500;
+  content: '';
+  border-radius: 999px;
+  display: block;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBjbGFzcz0ic2l6ZS02Ij4KICA8cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik0xMy41IDQuNSAyMSAxMm0wIDAtNy41IDcuNU0yMSAxMkgzIiAvPgo8L3N2Zz4=');
+  background-size: 2rem 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wp-block-button:hover {
+  background-color: #f0f0f0;
 }
