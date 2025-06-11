@@ -15,7 +15,7 @@
         <div>
             <div class="flex flex-col lg:flex-row  justify-center mt-24 gap-8 lg:gap-24 xl:gap-32">
                 @foreach ($stats as $stat)
-                    <div>
+                    <div class="basis-[100%]">
 
                         <div
                             class="mx-auto size-48 flex items-center justify-center flex-col bg-teal p-4 text-center rounded-full -mt-24 mb-4">
