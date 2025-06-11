@@ -5,11 +5,10 @@
                 href=" {{ get_privacy_policy_url() }}">Find
                 out more</a>
         </p>
-        <div class="ml-auto flex flex-col-reverse gap-1 md:flex-row">
-            <button
-                class="decline-cookies  leading-none block  border-2 border-black px-6 py-2 pt-3 font-semibold !no-underline transition duration-300 hover:bg-green hover:bg-opacity-20">Decline</button>
-            <button
-                class="accept-cookies block leading-none  border-2 border-black bg-lime px-12 pt-3 py-2 font-semibold text-black !no-underline transition duration-300">Accept</button>
+        <div class="ml-auto flex flex-col-reverse gap-8 md:flex-row">
+            <button class="decline-cookies underline leading-none py-2 pt-3 ">Decline</button>
+
+            <x-button class="accept-cookies !border-lime !pl-8 !font-normal" label="Accept"></x-button>
         </div>
     </div>
 </div>

@@ -5,6 +5,10 @@
 .wp-block-button__link {
   @apply bg-transparent -translate-x-4 transition duration-500 font-semibold !p-0 text-black;
 }
+
+.wp-block-buttons {
+  @apply gap-4 flex flex-col items-start;
+}
 .wp-block-button {
   @apply !flex gap-6 p-0 items-center text-black bg-transparent transition duration-500 ml-auto border border-transparent rounded-full pl-4 font-bold;
 }
