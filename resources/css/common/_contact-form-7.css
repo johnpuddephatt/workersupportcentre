@@ -10,7 +10,7 @@
 }
 
 .wpcf7-form {
-  @apply xl:columns-2 gap-12 container;
+  @apply xl:columns-2 xl:px-0 gap-12 container;
 }
 
 /* Text inputs, email, tel, url, number, date inputs */
