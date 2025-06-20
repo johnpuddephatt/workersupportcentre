@@ -2,7 +2,6 @@
 
 .wp-block-contact-form-7-contact-form-selector {
   @apply bg-beige py-16 w-full mb-24;
-  max-width: none !important;
 }
 
 .wp-block-hero + .wp-block-contact-form-7-contact-form-selector {
@@ -10,8 +9,17 @@
 }
 
 .wpcf7-form {
-  @apply xl:columns-2 gap-12 container overflow-hidden;
+  @apply container overflow-hidden;
   max-width: var(--wp--style--global--wide-size) !important;
+}
+
+.page-template-template-fullwidth .wpcf7-form {
+  @apply xl:columns-2 gap-12;
+}
+
+.page-template-template-fullwidth
+  .wp-block-contact-form-7-contact-form-selector {
+  max-width: none !important;
 }
 
 /* Text inputs, email, tel, url, number, date inputs */
