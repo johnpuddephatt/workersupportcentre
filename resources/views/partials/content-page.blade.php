@@ -1,4 +1,4 @@
-  <div class="page-content relative pb-36">
+  <div class="page-content prose relative pb-36">
       @php(the_content())
   </div>
 
