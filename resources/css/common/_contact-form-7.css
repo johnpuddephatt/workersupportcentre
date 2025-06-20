@@ -10,7 +10,7 @@
 }
 
 .wpcf7-form {
-  @apply xl:columns-2 gap-12 container;
+  @apply xl:columns-2 gap-12 container overflow-hidden;
   max-width: var(--wp--style--global--wide-size) !important;
 }
 
