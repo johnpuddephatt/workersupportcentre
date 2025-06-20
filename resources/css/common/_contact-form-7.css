@@ -1,7 +1,7 @@
 /* Contact Form 7 - Square Black Border Styles */
 
 .wp-block-contact-form-7-contact-form-selector {
-  @apply bg-beige py-16 w-full mb-24;
+  @apply bg-beige py-8 w-full mb-24;
 }
 
 .wp-block-hero + .wp-block-contact-form-7-contact-form-selector {
@@ -20,6 +20,7 @@
 .page-template-template-fullwidth
   .wp-block-contact-form-7-contact-form-selector {
   max-width: none !important;
+  @apply py-16;
 }
 
 /* Text inputs, email, tel, url, number, date inputs */
