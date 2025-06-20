@@ -54,6 +54,10 @@ class ThemeOptions extends Field
                     'return_format' => 'id'
                 ]
             )
+            ->addText('google_translate_languages', [
+                'label' => 'Google Translate Languages',
+                'instructions' => 'Enter the languages you want to support, separated by commas (e.g., "en,fr,de").',
+            ])
         ;
 
 

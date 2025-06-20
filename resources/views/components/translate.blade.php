@@ -6,7 +6,9 @@
             pageLanguage: 'en',
             layout: google.translate.TranslateElement.InlineLayout
                 .HORIZONTAL,
-            includedLanguages: 'ru,pl',
+            includedLanguages: {!! get_field('google_translate_languages', 'option')
+                ? '"' . get_field('google_translate_languages', 'option') . '"'
+                : '"en,fr,de,es,it,nl,pt,ru,zh-CN,ja,ko"' !!},
 
 
         }, 'google_translate_element');
