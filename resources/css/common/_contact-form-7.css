@@ -10,7 +10,8 @@
 }
 
 .wpcf7-form {
-  @apply xl:columns-2 xl:px-0 gap-12 container;
+  @apply xl:columns-2 xl:px-0 mb-24 gap-12 container;
+  max-width: var(--wp--style--global--wide-size);
 }
 
 /* Text inputs, email, tel, url, number, date inputs */
