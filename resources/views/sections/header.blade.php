@@ -6,8 +6,7 @@
 
                 {!! str_replace(
                     '[tel]',
-                    "<a class=\"font-bold\"
-                                         href=\"tel:" .                                                                                                                                                                                                                                                                                                                           href=\"tel:" .
+                    "<a class=\"font-bold\"  href=\"tel:" .
                         get_field('company_phone', 'options') .
                         "\">" .
                         get_field('company_phone', 'options') .
