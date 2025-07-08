@@ -1,13 +1,13 @@
 <header class="">
     <div class="container pt-6 pb-5 flex justify-center lg:justify-between bg-mint/50 max-w-none">
-        <div class="flex  gap-2 font-bold items-center">
+        <div class="flex  gap-2 font-semibold items-center">
             @if (get_field('header_text', 'options'))
                 @svg('phone', '-mt-1 w-8 h-8 bg-teal rounded-full')
 
                 {!! str_replace(
                     '[tel]',
-                    "<a class=\"inline-block text-blue-dark hover:text-blue-bright transition duration-300\"
-                                                                                                                                                                                                                                                                                                                    href=\"tel:" .
+                    "<a class=\"font-bold\"
+                                         href=\"tel:" .                                                                                                                                                                                                                                                                                                                           href=\"tel:" .
                         get_field('company_phone', 'options') .
                         "\">" .
                         get_field('company_phone', 'options') .
