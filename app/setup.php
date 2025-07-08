@@ -253,7 +253,7 @@ if (env('WP_ENV') === 'production') {
 }
 
 add_action('admin_init', function () {
-
+    add_post_type_support('page', 'excerpt');
 
     foreach (config('app.options_pages') as $key => $value) {
         add_settings_field($key, $value, function ($args) use ($key) {

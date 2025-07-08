@@ -13,6 +13,8 @@ return [
     */
 
     'post' => [
+
+
         'opportunity' => [
             'enter_title_here' => 'Enter job title',
             'menu_icon' => 'dashicons-pressthis',

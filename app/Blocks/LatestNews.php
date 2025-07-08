@@ -269,7 +269,7 @@ class LatestNews extends Block
             ->addNumber('number', [
                 'default_value' => 3,
                 'min' => 1,
-                'max' => 6,
+
             ])
             ->addTrueFalse('show_excerpt')
             ->addTrueFalse('show_image', [

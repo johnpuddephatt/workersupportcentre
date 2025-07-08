@@ -1,7 +1,7 @@
 <footer class="bg-teal text-white antialiased">
 
     <div class="container max-w-none py-16 flex items-start justify-between gap-8">
-        <x-logo class="w-40 lg:w-52 2xl:w-64" :mono="true" />
+        <x-logo class="w-40 lg:w-52 xl:w-64 2xl:w-72" :mono="true" />
         <div class="w-1/2 max-w-xl">
 
             <div>

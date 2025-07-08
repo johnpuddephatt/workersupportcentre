@@ -1,9 +1,39 @@
 <header class="">
+    <div class="container pt-4.5 pb-3 flex justify-between bg-mint/25 max-w-none">
+        <div>
+            @if (get_field('header_text', 'options'))
+                {!! str_replace(
+                    '[tel]',
+                    "<a class=\"inline-block text-blue-dark hover:text-blue-bright transition duration-300\"
+                                                    href=\"tel:" .
+                        get_field('company_phone', 'options') .
+                        "\">" .
+                        get_field('company_phone', 'options') .
+                        '</a>',
+                
+                    get_field('header_text', 'options'),
+                ) !!}
+            @endif
+        </div>
+        @if ($secondary_navigation)
+            <nav class="order-10 lg:order-none">
+                <ul class="flex flex-col justify-end text-2xl lg:flex-row lg:text-base gap-2 lg:gap-8 ">
+                    @foreach ($secondary_navigation as $item)
+                        <li>
+                            <a class="inline-block" href="{{ $item->url }}">{!! $item->label !!}</a>
+                        </li>
+                    @endforeach
 
-    <div class="py-12 container flex max-w-none  ">
+                    <x-translate />
+                </ul>
+            </nav>
+        @endif
+    </div>
+
+    <div class="py-12 container flex items-end max-w-none  ">
         <a label="Go to homepage" class="flex flex-row items-center gap-1.5 text-2xl font-bold tracking-tight lg:text-3xl"
             href="{{ home_url('/') }}">
-            <x-logo class="w-40 lg:w-52 2xl:w-64" />
+            <x-logo class="w-40 lg:w-52 xl:w-64 2xl:w-72" />
 
         </a>
 
@@ -28,26 +58,13 @@
 
                 <x-logo class="lg:hidden max-w-xs " :invert="true" />
 
-                @if ($secondary_navigation)
-                    <nav class="order-10 lg:order-none">
-                        <ul class="flex flex-col justify-end text-2xl lg:flex-row lg:text-base gap-2 lg:gap-8 ">
-                            @foreach ($secondary_navigation as $item)
-                                <li>
-                                    <a class="inline-block" href="{{ $item->url }}">{!! $item->label !!}</a>
-                                </li>
-                            @endforeach
-
-                            <x-translate />
-                        </ul>
-                    </nav>
-                @endif
-
                 <nav>
                     <ul class="flex flex-col lg:justify-end gap-4 lg:flex-row lg:gap-12">
                         @foreach ($primary_navigation as $item)
                             <li>
-                                <a class=" inline-block md:text-xl font-semibold text-2xl"
+                                <a class=" inline-block md:text-xl font-semibold text-2xl {{ $item->active ? 'type-underlined !decoration-orange' : '' }}"
                                     href="{{ $item->url }}">{!! $item->label !!}</a>
+
                             </li>
                         @endforeach
                     </ul>

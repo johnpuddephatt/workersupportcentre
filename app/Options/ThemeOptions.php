@@ -46,6 +46,10 @@ class ThemeOptions extends Field
             ->addText('company_address')
             ->addText('company_email')
             ->addText('company_phone')
+            ->addText('header_text', [
+                'label' => 'Header text',
+                'instructions' => 'This text will be displayed in the header. You can use [tel] to insert a clickable phone number.',
+            ])
             ->addImage(
                 'social_media_image',
                 [

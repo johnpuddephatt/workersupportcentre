@@ -3,7 +3,7 @@
 }
 
 @utility type-underlined {
-  @apply underline decoration-orange decoration-1 !font-normal  !leading-[1.6] underline-offset-[0.4em];
+  @apply !underline decoration-orange !decoration-1 !font-normal  !leading-[1.6] underline-offset-[0.4em];
 }
 
 @utility type-xl {

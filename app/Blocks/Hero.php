@@ -167,6 +167,7 @@ class Hero extends Block
             'content' => get_field('content'),
             'buttons' => get_field('buttons'),
             'image' => get_field('image'),
+            'aligntop' => get_field('aligntop'),
         ];
     }
 
@@ -194,6 +195,12 @@ class Hero extends Block
 
             ->addImage('image', [
                 'return_format' => 'id',
+            ])
+
+            ->addTrueFalse('aligntop', [
+                'ui' => 1,
+                'ui_on_text' => 'Not centered',
+                'ui_off_text' => 'Centered',
             ]);
 
         return $fields->build();
