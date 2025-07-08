@@ -1,7 +1,7 @@
 @props(['post', 'show_image' => true, 'show_excerpt' => true, 'variant' => 'default', 'large' => false])
 
 <a href="{{ get_permalink($post->ID) }}"
-    class="not-prose group relative py-4 flex gap-4 flex-row items-center  overflow-hidden">
+    class="not-prose group relative py-8 flex gap-4 flex-row items-center  overflow-hidden">
     @if ($show_image ?? false)
         <div class="w-28 {{ $large ? 'lg:w-36' : null }} max-w-[30%] flex-none overflow-hidden rounded-full">
             {!! get_the_post_thumbnail($post->ID, 'square', [
@@ -14,7 +14,7 @@
     <div class="flex-1 ">
         <div class="flex gap-2 items-end">
             <div>
-                <div class="mb-1 text-sm leading-snug">
+                <div class="mb-2 text-sm font-bold leading-snug">
                     {{ get_the_date(null, $post->ID) }}</div>
 
                 <h3 class="type-lg">{{ $post->post_title }}

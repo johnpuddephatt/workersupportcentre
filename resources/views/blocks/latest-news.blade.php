@@ -85,10 +85,11 @@
             ]) !!}
         </div>
     @endif
-    <div class="lg:basis-1/2 px-8 pt-12 pb-4">
+    <div class="lg:basis-1/2 py-12 lg:py-0 px-8  {{ $image ? ' flex flex-col justify-between' : '' }}">
+        {{-- Title --}}
 
         @if ($title)
-            <h2 class="type-2xl mb-12">{{ $title }}</h2>
+            <h2 class="type-2xl pb-12">{{ $title }}</h2>
         @endif
 
         <div class="max-w-4xl gap-6 mb-16 divide-y border-b border-b-lime divide-lime">

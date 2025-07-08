@@ -5,7 +5,7 @@
                 href=" {{ get_privacy_policy_url() }}">Find
                 out more</a>
         </p>
-        <div class="ml-auto flex flex-col-reverse gap-8 md:flex-row">
+        <div class="ml-auto flex flex-col-reverse gap-8 sm:flex-row">
             <button class="decline-cookies underline leading-none py-2 pt-3 ">Decline</button>
 
             <x-button class="accept-cookies !border-lime !pl-8 !font-normal" label="Accept"></x-button>
