@@ -180,8 +180,17 @@ class Cards extends Block
         $fields
             ->addFlexibleContent('cards')
             ->addLayout('manual_link')
-            ->addTrueFalse('highlight')
-            ->addText('title')
+            ->addSelect('colour', [
+                'choices' =>
+                [
+                    'bg-beige' => 'Beige',
+                    'bg-lime' => 'Lime',
+                    'bg-teal' => 'Teal',
+                    'bg-mint' => 'Mint',
+                ],
+                'label' => 'Colour',
+                'default_value' => 'bg-beige',
+            ])->addText('title')
             ->addTextarea('content')
             ->addUrl('link')
             ->addLayout('page_or_post')
