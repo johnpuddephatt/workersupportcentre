@@ -34,7 +34,7 @@
     <div class="py-12 container flex items-end max-w-none  ">
         <a label="Go to homepage" class="flex flex-row items-center gap-1.5 text-2xl font-bold tracking-tight lg:text-3xl"
             href="{{ home_url('/') }}">
-            <x-logo class="w-48 md:w-52 xl:w-64 2xl:w-72" />
+            <x-logo class="w-48 md:w-52 xl:w-64 2xl:w-[17rem]" />
 
         </a>
 
