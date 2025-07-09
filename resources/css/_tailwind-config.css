@@ -20,6 +20,7 @@
 @source inline("bg-white");
 @source inline("bg-lime");
 @source inline("bg-peach");
+@source inline("mt-0");
 
 @utility container {
   margin-inline: auto;
