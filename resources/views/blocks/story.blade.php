@@ -1,5 +1,5 @@
-<div class="my-24 wp-block {{ $block->classes }} {{ $block->style == 'alternative' ? 'bg-lime' : 'bg-mint' }}
-{{ $block->block->align !== 'full' ? 'md:px-12' : '' }} overflow-hidden  relative py-12 md:py-16 not-prose"
+<div class="my-16 wp-block {{ $block->classes }} {{ $block->style == 'alternative' ? 'bg-lime' : 'bg-mint' }}
+{{ $block->block->align !== 'full' ? 'md:px-12' : '' }} overflow-hidden  relative py-12 not-prose"
     style="{{ $block->inlineStyle }}">
 
     <div class="absolute top-0 h-1/2 w-6 {{ $block->style == 'alternative' ? 'bg-mint' : 'bg-lime' }} left-0"></div>
