@@ -28,7 +28,7 @@
             </svg> --}}
         @endif
         <div
-            class=" relative {{ $aligntop ? null : 'items-center' }} flex flex-col-reverse  gap-8 lg:gap-12 xl:gap-16 lg:grid lg:grid-cols-2">
+            class=" relative {{ $aligntop ? null : 'lg:items-center' }} flex flex-col-reverse  gap-8 lg:gap-12 xl:gap-16 lg:grid lg:grid-cols-2">
             <div class="">
                 <h1
                     class="{{ $block->block->align ? 'type-2xl' : 'type-xl' }} type-underlined mb-6  md:mb-8  {{ match ($block->style) {'beige' => '!decoration-black','peach' => '!decoration-orange','teal' => '!decoration-lime',default => ''} }}">

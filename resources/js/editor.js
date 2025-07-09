@@ -5,7 +5,7 @@ domReady(() => {});
 window.addEventListener('load', function () {
   wp.blocks.unregisterBlockType('core/verse');
   wp.blocks.unregisterBlockType('core/cover');
-  wp.blocks.unregisterBlockType('core/file');
+  // wp.blocks.unregisterBlockType('core/file');
   wp.blocks.unregisterBlockType('core/more');
   wp.blocks.unregisterBlockType('core/code');
   wp.blocks.unregisterBlockType('core/social-links');
