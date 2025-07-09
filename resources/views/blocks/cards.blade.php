@@ -21,8 +21,7 @@
           <!-- prettier-ignore-end -->
                 @endif
 
-                <a href="{{ $url }}"
-                    class="group relative block  {{ $card['highlight'] ? 'bg-lime' : 'bg-beige' }} p-8">
+                <a href="{{ $url }}" class="group relative block  {{ $card['colour'] ?? 'bg-beige' }} p-8">
                     <div class="absolute -top-3 -bottom-3 w-px bg-black left-0"></div>
                     <div class="flex h-full flex-col justify-between">
 
@@ -43,7 +42,7 @@
                         </div>
 
                         <div class="mt-4 font-bold">
-                            Read more
+                            {{ 'Read more' ?? $card['content'] }}
                         </div>
 
                     </div>

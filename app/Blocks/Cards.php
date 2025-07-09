@@ -185,7 +185,17 @@ class Cards extends Block
             ->addTextarea('content')
             ->addUrl('link')
             ->addLayout('page_or_post')
-            ->addTrueFalse('highlight')
+            ->addSelect('colour', [
+                'choices' =>
+                [
+                    'bg-beige' => 'Beige',
+                    'bg-lime' => 'Lime',
+                    'bg-teal' => 'Teal',
+                    'bg-mint' => 'Mint',
+                ],
+                'label' => 'Colour',
+                'default_value' => 'bg-beige',
+            ])
             ->addPostObject('page', [
                 'post_type' => ['page', 'post'],
                 'return_format' => 'id',
@@ -209,6 +219,21 @@ class Cards extends Block
 
             ->addTextarea(
                 'content',
+                [
+                    'conditional_logic' => [
+                        [
+                            [
+                                'field' => 'override_details',
+                                'operator' => '==',
+                                'value' => '1',
+                            ],
+                        ],
+                    ],
+                ]
+            )
+
+            ->addText(
+                'read_more',
                 [
                     'conditional_logic' => [
                         [
