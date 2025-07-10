@@ -4,7 +4,7 @@
             .prefix__st0{stroke-miterlimit:10;fill:none;stroke:currentColor;stroke-width:2px}
         </style>
     </defs>
-    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="m7.2 20.2-.6 3.7-.6 3.7c0 .4.3.6.6.3l3.2-2.2 3.2-2.2v-.2c.1 0 11.1-17.7 11.1-17.7.6-1 .5-2.2-.3-2.6L21 1.4c-.8-.5-2 0-2.6 1L7.2 20.1h0v.1Z"/>
+    <path class="prefix__st0" d="m7.2 20.2-.6 3.7-.6 3.7c0 .4.3.6.6.3l3.2-2.2 3.2-2.2v-.2c.1 0 11.1-17.7 11.1-17.7.6-1 .5-2.2-.3-2.6L21 1.4c-.8-.5-2 0-2.6 1L7.2 20.1h0v.1Z"/>
     <path d="M12.8 23.6 7.4 20.5" class="prefix__st0"/>
     <path d="M23.8 5.1 18.4 2" class="prefix__st0"/>
     <path d="M7.9 27.2 6.1 26.2" class="prefix__st0"/>
