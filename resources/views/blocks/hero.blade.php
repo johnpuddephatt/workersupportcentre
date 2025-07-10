@@ -38,7 +38,7 @@
                     <div class="mt-6 flex flex-col gap-2 ">
                         @foreach ($buttons as $button)
                             @if (is_array($button['link']))
-                                <x-button :label="$button['link']['title']" :url="$button['link']['url']" :target="$button['link']['target']" />
+                                <x-button :class="$link_all ? 'before:inset-0 before:absolute ' : ''" :label="$button['link']['title']" :url="$button['link']['url']" :target="$button['link']['target']" />
                             @endif
                         @endforeach
                     </div>

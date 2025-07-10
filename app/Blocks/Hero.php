@@ -168,6 +168,7 @@ class Hero extends Block
             'buttons' => get_field('buttons'),
             'image' => get_field('image'),
             'aligntop' => get_field('aligntop'),
+            'link_all' => get_field('link_all'),
         ];
     }
 
@@ -201,6 +202,10 @@ class Hero extends Block
                 'ui' => 1,
                 'ui_on_text' => 'Not centered',
                 'ui_off_text' => 'Centered',
+            ])
+            ->addTrueFalse('link_all', [
+                'ui' => 1,
+
             ]);
 
         return $fields->build();
