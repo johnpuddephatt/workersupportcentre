@@ -2,7 +2,8 @@
     <div class="container pt-6 pb-5 flex justify-center lg:justify-between bg-mint/50 max-w-none">
         <div class="flex  gap-2 font-semibold items-center">
             @if (get_field('header_text', 'options'))
-                @svg('phone', '-mt-1 w-8 h-8 bg-teal rounded-full')
+                <div class=" bg-teal rounded-full p-1 -mt-1">
+                    @svg('phone', 'w-6 h-6')</div>
 
                 {!! str_replace(
                     '[tel]',
@@ -32,7 +33,8 @@
     </div>
 
     <div class="py-12 container flex items-end max-w-none  ">
-        <a label="Go to homepage" class="flex flex-row items-center gap-1.5 text-2xl font-bold tracking-tight lg:text-3xl"
+        <a label="Go to homepage"
+            class="flex flex-row items-center gap-1.5 text-2xl font-bold tracking-tight lg:text-3xl"
             href="{{ home_url('/') }}">
             <x-logo class="w-48 md:w-52 xl:w-64 2xl:w-[17rem]" />
 
