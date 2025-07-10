@@ -1,26 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 29.6 29.6">
-  <!-- Generator: Adobe Illustrator 29.0.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 192)  -->
-  <defs>
-    <style>
-      .st0 {
-        stroke-miterlimit: 10;
-      }
-
-      .st0, .st1 {
-        fill: none;
-        stroke: #000;
-        stroke-width: 1px;
-      }
-
-      .st1 {
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-    </style>
-  </defs>
-  <path class="st1" d="M7.2,20.2l-.6,3.7-.6,3.7c0,.4.3.6.6.3l3.2-2.2,3.2-2.2v-.2c.1,0,11.1-17.7,11.1-17.7.6-1,.5-2.2-.3-2.6l-2.8-1.6c-.8-.5-2,0-2.6,1L7.2,20.1h0c0,.1,0,.1,0,.1Z"/>
-  <line class="st0" x1="12.8" y1="23.6" x2="7.4" y2="20.5"/>
-  <line class="st0" x1="23.8" y1="5.1" x2="18.4" y2="2"/>
-  <line class="st0" x1="7.9" y1="27.2" x2="6.1" y2="26.2"/>
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__Layer_2" version="1.1" viewBox="0 0 29.6 29.6">
+    <defs>
+        <style>
+            .prefix__st0{stroke-miterlimit:10;fill:none;stroke:currentColor;stroke-width:2px}
+        </style>
+    </defs>
+    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="m7.2 20.2-.6 3.7-.6 3.7c0 .4.3.6.6.3l3.2-2.2 3.2-2.2v-.2c.1 0 11.1-17.7 11.1-17.7.6-1 .5-2.2-.3-2.6L21 1.4c-.8-.5-2 0-2.6 1L7.2 20.1h0v.1Z"/>
+    <path d="M12.8 23.6 7.4 20.5" class="prefix__st0"/>
+    <path d="M23.8 5.1 18.4 2" class="prefix__st0"/>
+    <path d="M7.9 27.2 6.1 26.2" class="prefix__st0"/>
 </svg>
