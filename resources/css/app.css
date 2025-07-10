@@ -3,5 +3,5 @@
 @import './common/global.css';
 
 .wp-block-text-icon .wp-block-heading {
-  @apply mb-8;
+  @apply mb-6;
 }
