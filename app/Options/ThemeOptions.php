@@ -33,7 +33,6 @@ class ThemeOptions extends Field
         $fields = Builder::make('Social media');
 
         $fields
-
             ->addRepeater('social_media', [
                 'label' => 'Social media',
                 'layout' => 'table',

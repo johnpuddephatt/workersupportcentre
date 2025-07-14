@@ -1,6 +1,6 @@
 @if ($cards)
 
-    <div class="wp-block {{ $block->classes }}  {{ !$block->block->align ? 'md:px-0 ' : null }} not-prose relative my-16 container 2xl:my-24"
+    <div class="wp-block {{ $block->classes }}  {{ !$block->block->align ? 'md:px-0 ' : null }} not-prose relative {{ $block->block->align == 'full' ? '' : 'my-16 container 2xl:my-24' }}"
         style="{{ $block->inlineStyle }}">
 
         <div
@@ -22,10 +22,13 @@
                 @endif
 
                 <a href="{{ $url }}" class="group relative block  {{ $card['colour'] ?? 'bg-beige' }} p-8">
-                    <div class="absolute -top-3 -bottom-3 w-px bg-black left-0"></div>
-                    <div class="flex h-full flex-col justify-between">
+                    @if ($block->block->align !== 'full')
+                        <div class="absolute -top-3 -bottom-3 w-px bg-black left-0"></div>
+                    @endif
+                    <div
+                        class="flex h-full flex-col justify-between  {{ $block->block->align == 'full' ? 'container' : null }}">
 
-                        <h3 class="min-h-16 lg:min-h-28 type-xl mb-4">
+                        <h3 class="min-h-16  {{ $block->block->align == 'full' ? '' : 'lg:min-h-28' }} type-xl mb-4">
                             {{ $title }}</h3>
 
                         <div class="flex items-start gap-2 lg:gap-4">
