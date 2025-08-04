@@ -2,7 +2,7 @@
     <div class="container pt-6 pb-5 flex justify-center lg:justify-between bg-mint/50 max-w-none">
         <div class="flex  gap-2 font-semibold items-center">
             @if (get_field('header_text', 'options'))
-                <div class=" bg-teal rounded-full p-1 -mt-1">
+                <div class=" bg-teal text-white rounded-full p-1 -mt-1">
                     @svg('phone', 'w-6 h-6')</div>
 
                 {!! str_replace(

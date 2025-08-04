@@ -22,7 +22,7 @@
                                 {!! Str::of($contact['text'])->replace(
                                         '[tel]',
                                         '<a class="!underline font-semibold" href="tel:' .
-                                            get_field('company_phone', 'option') .
+                                            str_replace(' ', '', get_field('company_phone', 'option')) .
                                             '">' .
                                             get_field('company_phone', 'option') .
                                             '</a>',

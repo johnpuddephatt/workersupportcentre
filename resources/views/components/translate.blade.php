@@ -28,6 +28,10 @@
         margin-top: -0.5rem;
     }
 
+    .goog-te-gadget+.goog-te-gadget {
+        display: none;
+    }
+
     .goog-te-gadget>span {
         display: none;
     }
