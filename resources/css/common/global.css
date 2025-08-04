@@ -38,6 +38,10 @@ a.active {
   @apply transition-all font-bold antialiased decoration-black/20 hover:decoration-black/70;
 }
 
-/* :root :where(a:where(:not(.wp-element-button))) {
+:root :where(a:where(:not(.wp-element-button))) {
   text-decoration-line: none;
-} */
+}
+
+:root .prose a {
+  text-decoration-line: underline;
+}
