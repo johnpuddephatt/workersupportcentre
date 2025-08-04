@@ -6,10 +6,14 @@
 .wp-block-file {
   @apply !flex;
 }
-.wp-block-file:not(:has(> .wp-block-file__content-wrapper)) {
+.wp-block-file:not(:has(> div)) {
   @apply !inline-flex;
   clear: both;
   float: left;
+}
+
+.wp-block-file:has(> div)::after {
+  @apply hidden;
 }
 
 .wp-block-button__link,
