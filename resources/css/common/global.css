@@ -42,6 +42,7 @@ a.active {
   text-decoration-line: none;
 }
 
-:root .prose a {
+:root .prose p a,
+:root .prose li a {
   text-decoration-line: underline;
 }
