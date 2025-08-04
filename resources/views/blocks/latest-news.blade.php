@@ -75,7 +75,8 @@
     </div>
 @endif
 
-<div class="wp-block {{ $block->classes }} {{ $block->block->align ? 'container' : null }} {{ $image ? 'flex gap-8 xl:gap-12' : null }} {{ $image && $block->block->align === 'full' ? ' xl:gap-8 ' : null }} {{ $block->block->align ? 'lg:flex-row' : '' }} flex-col not-prose relative z-10 mx-auto my-16 2xl:my-24"
+<div id="news"
+    class="wp-block {{ $block->classes }} {{ $block->block->align ? 'container' : null }} {{ $image ? 'flex gap-8 xl:gap-12' : null }} {{ $image && $block->block->align === 'full' ? ' xl:gap-8 ' : null }} {{ $block->block->align ? 'lg:flex-row' : '' }} flex-col not-prose relative z-10 mx-auto my-16 2xl:my-24"
     style="{{ $block->inlineStyle }}">
     @if ($image)
         <div class="hidden lg:block overflow-hidden w-full lg:basis-1/2 relative">
@@ -110,4 +111,5 @@
             @endif
         </div>
     </div>
+
 </div>

@@ -201,6 +201,8 @@ class LatestNews extends Block
             $tagged_posts = get_posts([
                 'posts_per_page' => get_field('number'),
                 'post_type' => 'post',
+                'paged' => (int) $currentPage,
+
                 // if category is selected, filter by category
                 'tax_query' =>  [
                     [
