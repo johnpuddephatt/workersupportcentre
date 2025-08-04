@@ -8,6 +8,8 @@
 }
 .wp-block-file:not(:has(> .wp-block-file__content-wrapper)) {
   @apply !inline-flex;
+  clear: both;
+  float: left;
 }
 
 .wp-block-button__link,
@@ -43,7 +45,7 @@
 .wp-block-file__button::after:hover,
 .wp-block-file:hover,
 .wp-block-button:hover {
-  @apply border-lime !bg-lime/10;
+  @apply border-lime !bg-lime/10 !text-black;
 }
 
 .wp-block-file:hover .wp-block-file__button::after,
