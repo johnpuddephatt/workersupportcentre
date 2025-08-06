@@ -27,6 +27,18 @@ return [
             ],
         ],
 
+        // 'case_study' => [
+        //     'enter_title_here' => 'Enter case study title',
+        //     'menu_icon' => 'dashicons-chart-bar',
+        //     'supports' => ['title', 'thumbnail', 'excerpt', 'editor', 'author', 'revisions'],
+        //     'show_in_rest' => true,
+        //     'has_archive' => false,
+        //     'labels' => [
+        //         'singular' => 'Case study',
+        //         'plural' => 'Case studies',
+        //     ],
+        // ],
+
         'sector' => [
             'enter_title_here' => 'Enter sector title',
             'menu_icon' => 'dashicons-image-filter',
