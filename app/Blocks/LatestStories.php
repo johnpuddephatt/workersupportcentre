@@ -166,15 +166,6 @@ class LatestStories extends Block
     {
 
 
-
-
-
-
-
-
-
-
-
         return [
             'title' => get_field('title'),
             'stories' => get_posts([

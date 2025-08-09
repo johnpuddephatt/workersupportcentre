@@ -12,7 +12,9 @@
         <div class="max-w-4xl gap-6 mb-16 divide-y border-b border-b-lime divide-lime">
             @forelse ($stories as $post)
                 @include('blocks.story', [
-                    'block' => $block,
+                    'block' => [
+                        'style' => $loop->even ? 'alternative' : 'default',
+                    ],
                     'heading' => get_the_title($post),
                     'content' => get_the_excerpt($post),
                     'image' => get_post_thumbnail_id($post),
