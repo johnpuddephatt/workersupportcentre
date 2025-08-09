@@ -185,7 +185,7 @@ class LatestStories extends Block
                     [
                         'taxonomy' => 'category',
                         'field' => 'slug',
-                        'terms' => 'story',
+                        'terms' => 'impact-stories',
                     ]
                 ],
 
