@@ -14,7 +14,7 @@
                 @include('blocks.story', [
                     'block' => (object) [
                         'style' => $loop->even ? 'alternative' : 'default',
-                        'classes' => 'alignfull',
+                        'classes' => '!max-w-none',
                     ],
                     'heading' => get_the_title($post),
                     'content' => get_the_excerpt($post),
