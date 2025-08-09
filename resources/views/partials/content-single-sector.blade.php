@@ -3,6 +3,7 @@
     'content' => get_the_excerpt(),
     'buttons' => [],
     'image' => get_post_thumbnail_id(),
+    'aligntop' => false,
     'block' => (object) [
         'classes' => 'mb-16',
 

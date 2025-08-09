@@ -5,7 +5,7 @@
     <div class="absolute top-0 h-1/2 w-6 {{ $block->style == 'alternative' ? 'bg-mint' : 'bg-lime' }} left-0"></div>
     <div class="absolute top-1/2 h-1/2  w-6 bg-teal left-0"></div>
 
-    <div class="   w-content !mx-0 lg:!mx-auto  relative flex flex-col items-center-safe gap-8 ">
+    <div class=" w-full !mx-0 lg:!mx-auto  relative flex flex-col items-center-safe gap-8 ">
 
         {{-- @if ($image)
             <div
@@ -18,7 +18,7 @@
             </div>
         @endif --}}
 
-        <div class="">
+        <div class="w-full">
             <h2 class="type-xl  mb-6  md:mb-8">
                 “{{ $heading }}”</h2>
             <div class="max-w-xl ">{!! $content !!}</div>

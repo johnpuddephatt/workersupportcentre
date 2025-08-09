@@ -39,10 +39,10 @@ class Page extends Composer
             $toc .= '<h3 class="type-lg mb-6">On this page</h3><ul id="toc-menu">';
 
             if (strpos($content, '<h2') >= 10) {
-                $toc .=  '<li class="mb-4 leading-tight"><a class=" " href="#overview">Overview</a></li>';
+                $toc .=  '<li class="mb-4 leading-tight"><a class="!underline !decoration-lime  hover:!decoration-teal" href="#overview">Overview</a></li>';
             }
             foreach ($items as $item) {
-                $toc .= '<li class="mb-4 leading-tight" ><a class=" " href="#' . sanitize_title_with_dashes($item[2]) . '">' . $item[2] . '</a></li>';
+                $toc .= '<li class="mb-4 leading-tight" ><a class="!underline !decoration-lime hover:!decoration-teal" href="#' . sanitize_title_with_dashes($item[2]) . '">' . $item[2] . '</a></li>';
             }
             $toc .= '</ul>';
             $toc .= '</div>';

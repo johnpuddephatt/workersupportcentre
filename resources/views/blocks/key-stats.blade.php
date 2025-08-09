@@ -25,7 +25,7 @@
 
                         </div>
 
-                        <div class="text-center prose max-w-xl">
+                        <div class="text-center font-bold prose max-w-xl">
                             {!! $stat['description'] !!}
                         </div>
 
