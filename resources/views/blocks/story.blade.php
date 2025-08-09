@@ -1,5 +1,3 @@
-@dump($block)
-
 <div class="my-16 wp-block {{ $block->classes }} {{ $block->style == 'alternative' ? 'bg-lime' : 'bg-mint' }}
 {{ $block->block->align !== 'full' ? 'md:px-12' : '' }} overflow-hidden  relative py-12 not-prose"
     style="{{ $block->inlineStyle }}">

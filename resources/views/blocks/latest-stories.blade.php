@@ -13,7 +13,7 @@
             @forelse ($stories as $post)
                 @include('blocks.story', [
                     'block' => (object) [
-                        'style' => 'alternative',
+                        'style' => $loop->even ? 'alternative' : 'default',
                     ],
                     'heading' => get_the_title($post),
                     'content' => get_the_excerpt($post),
