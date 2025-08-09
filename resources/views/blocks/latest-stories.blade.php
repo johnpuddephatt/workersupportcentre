@@ -9,11 +9,12 @@
             <h2 class="text-center type-2xl pb-12">{{ $title }}</h2>
         @endif
 
-        <div class=" gap-6 mb-16 divide-y border-b border-b-lime divide-lime">
+        <div class=" gap-6 mb-16">
             @forelse ($stories as $post)
                 @include('blocks.story', [
                     'block' => (object) [
                         'style' => $loop->even ? 'alternative' : 'default',
+                        'classes' => 'alignfull',
                     ],
                     'heading' => get_the_title($post),
                     'content' => get_the_excerpt($post),
