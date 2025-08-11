@@ -26,3 +26,8 @@ h3.wp-block-heading {
 .prose > .acf-innerblocks-container > p:last-child {
   @apply mb-0;
 }
+
+.prose ul,
+.prose ol {
+  list-style-position: inside;
+}
