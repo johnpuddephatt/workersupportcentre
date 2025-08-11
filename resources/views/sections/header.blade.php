@@ -59,7 +59,7 @@
                     </svg>
                 </button>
 
-                <x-logo class="lg:hidden w-32 mb-8 h-auto " :invert="true" />
+                <x-logo class="lg:hidden w-48 mb-8 h-auto " :invert="true" />
 
                 <nav>
                     <ul class="flex flex-col lg:justify-end gap-4 lg:flex-row lg:gap-12">
