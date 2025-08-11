@@ -1,9 +1,9 @@
 @if ($show_filter)
-    <div class="bg-beige alignfull py-8">
+    <div class="bg-beige alignfull py-4 lg:py-8">
         <div>
 
             @if ($_GET['search'] ?? false)
-                <div class=" wp-block justify-between mx-auto items-center flex ">
+                <div class=" !px-4  wp-block justify-between mx-auto items-center flex ">
                     <div class="type-lg">Search results</div>
                     <div class="inline-flex overflow-hidden rounded-full border border-teal">
                         <h3 class="text-center pt-3 pb-2 p-2 px-4  ">Articles containing
@@ -16,7 +16,7 @@
                     </div>
                 </div>
             @elseif($_GET['category'] ?? false)
-                <div class=" wp-block justify-between mx-auto items-center flex ">
+                <div class=" !px-4  wp-block justify-between mx-auto items-center flex ">
 
                     <div class="type-lg">Search results</div>
                     <div class="inline-flex overflow-hidden rounded-full border border-teal">
@@ -31,10 +31,10 @@
                     </div>
                 </div>
             @else
-                <form action="{{ get_permalink(get_option('page_for_posts')) }}" class=" wp-block mx-auto"
+                <form action="{{ get_permalink(get_option('page_for_posts')) }}" class=" px-4  wp-block mx-auto"
                     method="GET">
 
-                    <div class="flex justify-between items-center">
+                    <div class="flex flex-col gap-2 lg:flex-row lg:justify-between lg:items-center">
                         <label for="resource-search" class="sr-only">Search news</label>
                         <div class="flex flex-grow">
                             <input name="search" type="search"
@@ -49,9 +49,9 @@
                                 </svg>
                             </button>
                         </div>
-                        <div class="relative ml-auto">
+                        <div class="relative ">
                             <select onchange="this.form.submit()"
-                                class="max-w-xs appearance-none focus-visible:outline-2  -outline-offset-2 outline-teal border bg-white border-beige px-4 py-2 pr-8 text-lg lg:pr-12"
+                                class="w-full lg:max-w-xs appearance-none focus-visible:outline-2  -outline-offset-2 outline-teal border bg-white border-beige px-4 py-2 pr-8 text-lg lg:pr-12"
                                 name="category">
                                 <option value="">All categories</option>
 
@@ -76,7 +76,7 @@
 @endif
 
 <div id="news"
-    class="wp-block {{ $block->classes }} {{ $block->block->align ? 'container' : null }} {{ $image ? 'flex gap-8 xl:gap-12' : null }} {{ $image && $block->block->align === 'full' ? ' xl:gap-8 ' : null }} {{ $block->block->align ? 'lg:flex-row' : '' }} flex-col not-prose relative z-10 mx-auto my-8 lg:my-16 2xl:my-24"
+    class="wp-block {{ $block->classes }} {{ $block->block->align ? 'container' : null }} {{ $image ? 'flex gap-8 xl:gap-12' : null }} {{ $image && $block->block->align === 'full' ? ' xl:gap-8 ' : null }} {{ $block->block->align ? 'lg:flex-row' : '' }} flex-col pb-8 not-prose relative z-10 mx-auto lg:my-16 2xl:my-24"
     style="{{ $block->inlineStyle }}">
     @if ($image)
         <div class="hidden lg:block overflow-hidden w-full lg:basis-1/2 relative">
@@ -86,7 +86,7 @@
             ]) !!}
         </div>
     @endif
-    <div class="lg:basis-1/2 py-8  lg:py-0 px-4 lg:px-8  {{ $image ? ' flex flex-col justify-between' : '' }}">
+    <div class="lg:basis-1/2  lg:py-0 px-4 lg:px-8  {{ $image ? ' flex flex-col justify-between' : '' }}">
         {{-- Title --}}
 
         @if ($title)

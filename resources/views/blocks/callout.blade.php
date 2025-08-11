@@ -15,7 +15,7 @@
 
                 @if ($badge)
                     <div
-                        class="absolute   {{ $block->style == 'alternative' ? 'bg-lime -right-4 text-black size-28' : '-left-4 bg-orange size-24' }} p-3  -top-4 text-center  font-black rounded-full  leading-tight flex items-center justify-center type-sm ">
+                        class="absolute   {{ $block->style == 'alternative' ? 'bg-lime -right-12 lg:-right-4 text-black size-28' : '-left-4 bg-orange size-24' }} p-3  -top-4 text-center  font-black rounded-full  leading-tight flex items-center justify-center type-sm ">
                         {{ $badge }}
                     </div>
                 @endif

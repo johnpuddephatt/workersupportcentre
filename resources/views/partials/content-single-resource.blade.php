@@ -20,7 +20,7 @@
     </div>
 </div>
 
-<div class="container py-16">
+<div class="container py-8 lg:py-16">
     <div class="prose xl:prose-lg">
         {!! get_field('content') !!}
     </div>
