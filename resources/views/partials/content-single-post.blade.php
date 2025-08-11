@@ -32,7 +32,7 @@
 </div>
 <div class="container alignwide  ">
 
-    <div class="py-16 prose post-content max-w-none border-r border-r-lime xl:prose-lg">
+    <div class="py-16 pb-40 prose post-content max-w-none border-r border-r-lime xl:prose-lg">
         {!! get_the_content() !!}
     </div>
 
