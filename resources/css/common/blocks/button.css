@@ -34,7 +34,7 @@
 }
 
 .wp-block-file__button {
-  @apply lg:-mr-16 pl-4 bg-lime !text-black flex  items-center;
+  @apply lg:-mr-16 p-0 pl-4 bg-lime !text-black flex  items-center;
 }
 
 .wp-block-file:hover > a:first-child,
