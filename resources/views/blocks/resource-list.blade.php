@@ -20,9 +20,9 @@
                 <div class="type-lg">Search results</div>
                 <div class="inline-flex overflow-hidden rounded-full border border-teal">
 
-                    <h3 class="  text-center pt-3 pb-2 p-2 px-4 ">
+                    <div class="  text-center pt-3 pb-2 p-2 px-4 ">
                         "{{ get_term($_GET['type'])->name }}"
-                    </h3>
+                    </div>
 
                     <a aria-label="Clear search" href="{{ get_permalink() }}"
                         class="bg-teal focus-visible:outline-2  -outline-offset-2 outline-teal focus-within:bg-white focus-within:text-teal text-white px-4 pt-3 pb-2  ">
@@ -49,7 +49,7 @@
                     </div>
                     <div class="relative ">
                         <select onchange="this.form.submit()"
-                            class="max-w-xs appearance-none focus-visible:outline-2  -outline-offset-2 outline-teal border bg-white border-beige px-4 py-2 pr-8 text-lg lg:pr-12"
+                            class="w-full lg:max-w-xs appearance-none focus-visible:outline-2  -outline-offset-2 outline-teal border bg-white border-beige px-4 py-2 pr-8 text-lg lg:pr-12"
                             name="type">
                             <option value="">All types</option>
 
@@ -71,7 +71,7 @@
     </div>
 </div>
 
-<div class="wp-block px-4 my-16 {{ $block->classes }}" style="{{ $block->inlineStyle }}">
+<div class="wp-block px-4 my-8 lg:my-16 {{ $block->classes }}" style="{{ $block->inlineStyle }}">
     @forelse ($resources as $resource)
         <x-resource-card :resource="$resource" />
     @empty
