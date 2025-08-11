@@ -48,7 +48,8 @@
                 {!! wp_get_attachment_image($image, $block->style == 'beige' ? 'square-xl' : 'landscape', false, [
                     'sizes' => ' (min-width: 1200px) 40vw, (min-width: 800px) 55vw, 75vw',
                     'class' =>
-                        'w-full h-auto lg:mt-4 ' . ($block->style == 'beige' ? 'rounded-full max-w-sm lg:max-w-md lg:ml-auto' : ''),
+                        'w-full h-auto lg:mt-4 ' .
+                        ($block->style == 'beige' ? '  ml-4 mt-8 rounded-full max-w-xs lg:max-w-sm lg:max-w-md lg:ml-auto' : ''),
                 ]) !!}
             @endif
 

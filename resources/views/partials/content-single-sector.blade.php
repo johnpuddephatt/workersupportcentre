@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="lg:w-48 xl:w-64 bg-lime lg:bg-transparent p-8 lg:p-0">
-        <div class="sticky top-12">
+        <div class="lg:sticky lg:top-12">
             {!! $toc !!}
         </div>
     </div>
