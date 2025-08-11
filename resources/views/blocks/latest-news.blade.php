@@ -6,7 +6,7 @@
                 <div class=" !px-4  wp-block justify-between mx-auto items-center flex ">
                     <div class="type-lg">Search results</div>
                     <div class="inline-flex overflow-hidden rounded-full border border-teal">
-                        <h3 class="text-center pt-3 pb-2 p-2 px-4  ">Articles containing
+                        <h3 class="text-center pt-3 pb-2 p-2 px-4  ">Search:
                             "{{ $_GET['search'] }}"</h3>
 
                         <a aria-label="Clear search" href="{{ get_permalink(get_option('page_for_posts')) }}"
@@ -21,7 +21,7 @@
                     <div class="type-lg">Search results</div>
                     <div class="inline-flex overflow-hidden rounded-full border border-teal">
 
-                        <h3 class="  text-center pt-3 pb-2 p-2 px-4 ">Articles of category
+                        <h3 class="  text-center pt-3 pb-2 p-2 px-4 ">Category:
                             "{{ get_term($_GET['category'])->name }}"
                         </h3>
 
