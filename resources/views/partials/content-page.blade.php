@@ -1,4 +1,4 @@
-  <div class="page-content prose px-4 relative pb-8 lg:pb-36">
+  <div class="page-content prose  relative pb-8 lg:pb-36">
       @php(the_content())
   </div>
 

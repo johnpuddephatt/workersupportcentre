@@ -41,7 +41,7 @@
             </div>
         </div>
         <a href="{{ $link }}"
-            class="ml-auto mr-4 inline-block duration-500 group-hover:translate-x-4 transition rounded-full bg-black p-3 md:p-4">
+            class="ml-auto mr-4 hidden lg:inline-block duration-500 group-hover:translate-x-4 transition rounded-full bg-black p-3 md:p-4">
             @svg('arrow-right', ' text-lime block w-8 h-8 lg:w-12 lg:h-12')
         </a>
     </div>
