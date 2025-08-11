@@ -58,7 +58,6 @@
   @apply translate-x-0;
 }
 .wp-block-file__button::after,
-.wp-block-file::after,
 .wp-block-button::after {
   @apply w-12 h-12 flex-none bg-lime  -translate-x-2 transition duration-500;
   content: '';
