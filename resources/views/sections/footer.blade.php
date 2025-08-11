@@ -1,15 +1,15 @@
 <footer class="bg-teal text-white antialiased">
 
-    <div class="container max-w-none py-16 flex items-start justify-between gap-8">
+    <div class="container max-w-none py-16 flex flex-col lg:flex-row items-start justify-between gap-8">
         <x-logo class="w-48 md:w-52 xl:w-64 2xl:w-[17rem]" :mono="true" />
-        <div class="w-1/2 max-w-xl">
+        <div class="lg:w-1/2 max-w-xl">
 
             <div>
                 <p class="type-sm mb-2">{{ get_bloginfo('name') }}</p>
                 <p>{{ get_field('company_address', 'options') }}</p>
-                <p><a class="text-lime"
+                <p class="mt-2 flex flex-col lg:flex-row"><a class="text-lime"
                         href="mailto:{{ get_field('company_email', 'options') }}">{{ get_field('company_email', 'options') }}</a>
-                    | <a class="text-lime"
+                    <span class="hidden lg:inline">|</span> <a class="text-lime"
                         href="tel:{{ get_field('company_phone', 'options') }}">{{ get_field('company_phone', 'options') }}</a>
                 </p>
 

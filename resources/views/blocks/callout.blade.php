@@ -1,9 +1,9 @@
-<div class="my-24 wp-block {{ $block->classes }} {{ $block->style == 'alternative' ? 'bg-teal text-beige' : 'bg-beige' }}
+<div class=" lg:my-24 wp-block {{ $block->classes }} {{ $block->style == 'alternative' ? 'bg-teal text-beige' : 'bg-beige' }}
 {{ $block->block->align !== 'full' ? 'md:px-12' : '' }} overflow-hidden  relative py-12 md:py-16 not-prose"
     style="{{ $block->inlineStyle }}">
 
     <div
-        class="   w-content !mx-0 lg:!mx-auto  relative flex flex-col items-center-safe gap-8  {{ $block->style == 'alternative' ? 'md:flex-row-reverse' : 'md:flex-row' }}">
+        class=" lg:px-0 container w-content !mx-0 lg:!mx-auto  relative flex flex-col lg:items-center-safe gap-8  {{ $block->style == 'alternative' ? 'md:flex-row-reverse' : 'md:flex-row' }}">
 
         @if ($image)
             <div

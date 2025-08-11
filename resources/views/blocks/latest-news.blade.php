@@ -76,7 +76,7 @@
 @endif
 
 <div id="news"
-    class="wp-block {{ $block->classes }} {{ $block->block->align ? 'container' : null }} {{ $image ? 'flex gap-8 xl:gap-12' : null }} {{ $image && $block->block->align === 'full' ? ' xl:gap-8 ' : null }} {{ $block->block->align ? 'lg:flex-row' : '' }} flex-col not-prose relative z-10 mx-auto my-16 2xl:my-24"
+    class="wp-block {{ $block->classes }} {{ $block->block->align ? 'container' : null }} {{ $image ? 'flex gap-8 xl:gap-12' : null }} {{ $image && $block->block->align === 'full' ? ' xl:gap-8 ' : null }} {{ $block->block->align ? 'lg:flex-row' : '' }} flex-col not-prose relative z-10 mx-auto my-8 lg:my-16 2xl:my-24"
     style="{{ $block->inlineStyle }}">
     @if ($image)
         <div class="hidden lg:block overflow-hidden w-full lg:basis-1/2 relative">
@@ -86,14 +86,14 @@
             ]) !!}
         </div>
     @endif
-    <div class="lg:basis-1/2 py-12 lg:py-0 px-8  {{ $image ? ' flex flex-col justify-between' : '' }}">
+    <div class="lg:basis-1/2 py-8  lg:py-0 px-4 lg:px-8  {{ $image ? ' flex flex-col justify-between' : '' }}">
         {{-- Title --}}
 
         @if ($title)
-            <h2 class="type-2xl pb-12">{{ $title }}</h2>
+            <h2 class="type-2xl pb-6 lg:pb-12">{{ $title }}</h2>
         @endif
 
-        <div class="max-w-4xl gap-6 mb-16 divide-y border-b border-b-lime divide-lime">
+        <div class="max-w-4xl gap-6 mb-8 lg:mb-16 divide-y border-b border-b-lime divide-lime">
             @forelse ($news as $post)
                 <x-post-card :post="$post" :large="!$image" :show_image="$show_image" :show_excerpt="$show_excerpt" />
             @empty

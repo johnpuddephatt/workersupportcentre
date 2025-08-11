@@ -1,7 +1,7 @@
 {{-- $block->block->align  --}}
-<div class="wp-block {{ $block->classes }} {{ match ($block->style) {'beige' => 'bg-beige','peach' => 'bg-peach','teal' => 'bg-teal text-white',default => 'bg-white'} }}  overflow-hidden relative py-16 not-prose"
+<div class="wp-block {{ $block->classes }} {{ match ($block->style) {'beige' => 'bg-beige','peach' => 'bg-peach','teal' => 'bg-teal text-white',default => 'bg-white'} }}  overflow-hidden relative py-8 lg:py-16 not-prose"
     style="{{ $block->inlineStyle }}">
-    <div class="container">
+    <div class="container px-0">
         @if ($block->style == 'teal')
             <svg xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 right-2/3 w-1/2 h-auto pointer-events-none"
                 viewBox="0 0 288.24 111.46">

@@ -1,9 +1,9 @@
 {{-- $block->block->align  --}}
 
-<div class="mx-auto  wp-block {{ $block->block->align == 'full' ? 'alignwide' : '!max-w-6xl' }} relative py-16 lg:py-24 not-prose"
+<div class="mx-auto  wp-block {{ $block->block->align == 'full' ? 'alignwide' : '!max-w-6xl' }} relative py-12 lg:py-24 not-prose"
     style="{{ $block->inlineStyle }}">
 
-    <div class=" container  relative">
+    <div class=" px-0 container  relative">
         <h2 class="type-2xl  text-balance  {{ $block->block->align ? 'mb-8 lg:mb-20 ' : 'mb-6 md:mb-8' }}">
             {{ $heading }}</h2>
         <div class=" grid grid-cols-1 {{ $block->block->align ? 'lg:grid-cols-2' : '' }} gap-12 xl:gap-24">

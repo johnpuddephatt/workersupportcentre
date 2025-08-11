@@ -4,7 +4,7 @@
             d="M41.43 364.78S.12 361.88.2 308.73c.17-113.14 262.81 13.66 232.59-140.38C204.3 23.14 286.43.19 286.43.19" />
     </svg>{{-- $block->block->align  --}}
 
-    <div class="mx-auto container wp-block {{ $block->block->align == 'full' ? 'alignwide' : '!max-w-6xl' }}  relative pt-16 lg:pt-24 not-prose"
+    <div class="mx-auto container wp-block {{ $block->block->align == 'full' ? 'alignwide' : '!max-w-6xl' }}  relative pt-8  lg:pt-24 not-prose"
         style="{{ $block->inlineStyle }}">
 
         <div class="relative">
@@ -42,11 +42,11 @@
 
     <div class="alignfull h-px bg-orange"></div>
 
-    <div class="mx-auto container wp-block {{ $block->block->align == 'full' ? 'alignwide' : '!max-w-6xl' }} pt-px z-10 relative bg-white pb-16 lg:pb-24 not-prose"
+    <div class="mx-auto container wp-block {{ $block->block->align == 'full' ? 'alignwide' : '!max-w-6xl' }} pt-px z-10 relative bg-white pb-12 lg:pb-24 not-prose"
         style="{{ $block->inlineStyle }}">
         <div class="relative">
 
-            <div class="grid lg:grid-cols-3 mt-24 gap-8 lg:gap-12">
+            <div class="grid lg:grid-cols-3 mt-24 gap-20 lg:gap-12">
                 @foreach ($donations as $donation)
                     <a href="{{ Str::of($donate_url)->replace('{amount}', $donation['amount']) }}" target="_blank"
                         class="border-orange bg-white relative z-10 border rounded-lg p-8">

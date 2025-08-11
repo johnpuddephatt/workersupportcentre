@@ -32,7 +32,7 @@
         @endif
     </div>
 
-    <div class="py-12 container flex items-end max-w-none  ">
+    <div class="py-6 lg:py-12 container flex items-end max-w-none  ">
         <a label="Go to homepage"
             class="flex flex-row items-center gap-1.5 text-2xl font-bold tracking-tight lg:text-3xl"
             href="{{ home_url('/') }}">
