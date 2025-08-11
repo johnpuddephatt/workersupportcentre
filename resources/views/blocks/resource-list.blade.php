@@ -15,7 +15,7 @@
                 </div>
             </div>
         @elseif($_GET['type'] ?? false)
-            <div class=" wp-block justify-between mx-auto items-center flex ">
+            <div class=" wp-block justify-between mx-auto items-center flex flex-col lg:flex-row gap-4">
 
                 <div class="type-lg">Search results</div>
                 <div class="inline-flex overflow-hidden rounded-full border border-teal">
@@ -30,7 +30,7 @@
                 </div>
             </div>
         @else
-            <form action="{{ get_permalink() }}" class=" wp-block mx-auto" method="GET">
+            <form action="{{ get_permalink() }}" class=" px-4 wp-block mx-auto" method="GET">
 
                 <div class="flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center">
                     <label for="resource-search" class="sr-only">Search resources</label>
@@ -47,7 +47,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="relative ml-auto">
+                    <div class="relative ">
                         <select onchange="this.form.submit()"
                             class="max-w-xs appearance-none focus-visible:outline-2  -outline-offset-2 outline-teal border bg-white border-beige px-4 py-2 pr-8 text-lg lg:pr-12"
                             name="type">
