@@ -20,7 +20,7 @@
                 <div class="type-lg">Search results</div>
                 <div class="inline-flex overflow-hidden rounded-full border border-teal">
 
-                    <h3 class="  text-center pt-3 pb-2 p-2 px-4 ">Resources of type
+                    <h3 class="  text-center pt-3 pb-2 p-2 px-4 ">
                         "{{ get_term($_GET['type'])->name }}"
                     </h3>
 
