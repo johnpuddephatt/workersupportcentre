@@ -1,7 +1,7 @@
 {{-- $block->block->align  --}}
-<div class="wp-block {{ $block->classes }} {{ match ($block->style) {'beige' => 'bg-beige','peach' => 'bg-peach','teal' => 'bg-teal text-white',default => 'bg-white'} }}  overflow-hidden relative py-8 lg:py-16 not-prose"
+<div class="wp-block max-lg:!px-0 {{ $block->classes }} {{ match ($block->style) {'beige' => 'bg-beige','peach' => 'bg-peach','teal' => 'bg-teal text-white',default => 'bg-white'} }}  overflow-hidden relative pb-8 lg:py-16 not-prose"
     style="{{ $block->inlineStyle }}">
-    <div class="container px-0">
+    <div class="container max-lg:px-0">
         @if ($block->style == 'teal')
             <svg xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 right-2/3 w-1/2 h-auto pointer-events-none"
                 viewBox="0 0 288.24 111.46">
@@ -28,8 +28,8 @@
             </svg> --}}
         @endif
         <div
-            class=" relative {{ $aligntop ? null : 'lg:items-center' }} flex flex-col-reverse  gap-8 lg:gap-12 xl:gap-16 lg:grid lg:grid-cols-2">
-            <div class="">
+            class=" relative {{ $aligntop ? null : 'lg:items-center' }} flex  flex-col-reverse  gap-8 lg:gap-12 xl:gap-16 lg:grid lg:grid-cols-2">
+            <div class="px-4">
                 <h1
                     class="{{ $block->block->align ? 'type-2xl' : 'type-xl' }} type-underlined mb-6  md:mb-8  {{ match ($block->style) {'beige' => '!decoration-black','peach' => '!decoration-orange','teal' => '!decoration-lime',default => ''} }}">
                     {{ $heading }}</h1>
