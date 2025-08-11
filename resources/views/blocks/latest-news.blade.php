@@ -1,6 +1,6 @@
 @if ($show_filter)
     <div class="bg-beige alignfull py-4 lg:py-8">
-        <div>
+        <div class="px-4">
 
             @if ($_GET['search'] ?? false)
                 <div class=" !px-4  wp-block justify-between mx-auto items-center flex ">
