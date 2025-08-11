@@ -34,7 +34,7 @@
 }
 
 .wp-block-file__button {
-  @apply -mr-16 p-0 pl-4 bg-lime !text-black flex  items-center;
+  @apply lg:-mr-16 p-0 lg:pl-4 bg-lime !text-black flex  items-center;
 }
 
 .wp-block-file:hover > a:first-child,
@@ -57,9 +57,7 @@
 .wp-block-button:hover::after {
   @apply translate-x-0;
 }
-.wp-block-file__button::after,
-.wp-block-file::after,
-.wp-block-button::after {
+.wp-block-file__button::after. .wp-block-button::after {
   @apply w-12 h-12 flex-none bg-lime  -translate-x-2 transition duration-500;
   content: '';
   border-radius: 999px;
