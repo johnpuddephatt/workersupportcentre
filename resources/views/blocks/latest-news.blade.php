@@ -6,7 +6,7 @@
                 <div class=" !px-4  wp-block justify-between mx-auto items-center flex ">
                     <div class="type-lg">Search results</div>
                     <div class="inline-flex overflow-hidden rounded-full border border-teal">
-                        <h3 class="text-center pt-3 pb-2 p-2 px-4  ">Search:
+                        <h3 class="text-center pt-3 pb-2 p-2 px-4  ">
                             "{{ $_GET['search'] }}"</h3>
 
                         <a aria-label="Clear search" href="{{ get_permalink(get_option('page_for_posts')) }}"
@@ -38,7 +38,7 @@
                         <label for="resource-search" class="sr-only">Search news</label>
                         <div class="flex flex-grow">
                             <input name="search" type="search"
-                                class=" bg-white focus-visible:outline-2  -outline-offset-2 outline-teal py-2 pl-4 pr-0 text-lg  w-full max-w-xs"
+                                class=" bg-white focus-visible:outline-2  -outline-offset-2 outline-teal py-2 pl-4 pr-0 text-lg  w-full lg:max-w-xs"
                                 placeholder="Search by article title..." id="news-search" />
                             <button type="submit"
                                 class="bg-teal focus-visible:outline-2  -outline-offset-2 outline-teal focus-within:bg-white focus-within:text-teal text-white px-4 py-2 text-lg  ">
@@ -97,7 +97,7 @@
             @forelse ($news as $post)
                 <x-post-card :post="$post" :large="!$image" :show_image="$show_image" :show_excerpt="$show_excerpt" />
             @empty
-                <div class="text-center py-24 bg-beige">
+                <div class="text-center my-8 py-24 bg-beige">
                     <p class="text-lg">No news articles found.</p>
                 </div>
             @endforelse
