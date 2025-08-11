@@ -1,4 +1,4 @@
-<div class="mx-auto container wp-block {{ $block->block->align == 'full' ? 'alignwide' : '!max-w-6xl' }}  relative py-16 lg:py-24 not-prose"
+<div class="mx-auto container wp-block {{ $block->block->align == 'full' ? 'alignwide' : '!max-w-6xl' }}  relative py-12 lg:py-24 not-prose"
     style="{{ $block->inlineStyle }}">
 
     <div class="relative">

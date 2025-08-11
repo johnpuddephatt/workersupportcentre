@@ -1,11 +1,11 @@
 <div class="cookie-notice  fixed bottom-0 left-0 right-0 z-20  bg-beige py-3 shadow">
-    <div class="container flex items-center gap-3">
+    <div class="container flex flex-col lg:flex-row lg:items-center gap-3">
         <p class="font-medium leading-none pt-1">
             {{ get_field('privacy_banner', 'option') }} <a class="!underline  !decoration-black"
                 href=" {{ get_privacy_policy_url() }}">Find
                 out more</a>
         </p>
-        <div class="ml-auto flex flex-col-reverse gap-8 sm:flex-row">
+        <div class="ml-auto flex gap-8 ">
             <button class="decline-cookies underline leading-none py-2 pt-3 ">Decline</button>
 
             <x-button class="accept-cookies !border-lime !pl-8 !font-normal" label="Accept"></x-button>
