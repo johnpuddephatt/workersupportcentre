@@ -19,7 +19,7 @@
                                 </div>
                             @endif
                         </div>
-                        <h3 class="type-lg mt-4">{{ $person->post_title }}</h3>
+                        <h3 class="type-lg mt-4 mb-2">{{ $person->post_title }}</h3>
                         <div class="font-normal leading-none">{{ get_field('role_title', $person->ID) }}</div>
 
                     </div>
@@ -46,8 +46,8 @@
                             </div>
 
                             <div class="py-2">
-                                <h3 class="type-lg ">{{ $person->post_title }}</h3>
-                                <div class="font-normal">{{ get_field('role_title', $person->ID) }}</div>
+                                <h3 class="type-lg mb-2 ">{{ $person->post_title }}</h3>
+                                <div class="font-normal leading-none">{{ get_field('role_title', $person->ID) }}</div>
                             </div>
 
                             {{-- <div class="ml-auto rounded-full bg-white bg-opacity-60 p-4 transition group-hover:bg-opacity-100">
