@@ -1,4 +1,4 @@
-  <div class="relative w-full overflow-hidden pb-72 pt-32">
+  <div class="relative w-full overflow-hidden  lg:pb-72 py-12 lg:pt-32">
 
       <div class="container flex flex-col-reverse gap-4 pb-4 lg:flex-row lg:items-end">
           <div class="relative z-10 lg:w-1/2">
