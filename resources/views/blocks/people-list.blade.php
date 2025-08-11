@@ -1,4 +1,4 @@
-<div class="wp-block my-16 {{ $block->classes }}" style="{{ $block->inlineStyle }}">
+<div class="wp-block my-8 lg:my-16 {{ $block->classes }}" style="{{ $block->inlineStyle }}">
     @if ($title)
         <h2 class="type-2xl text-center mb-12">{{ $title }}</h2>
     @endif
@@ -8,14 +8,14 @@
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 @foreach ($people as $person)
                     <div class="flex flex-col">
-                        <div class="overflow-hidden h-32 w-32 rounded-full">
+                        <div class="overflow-hidden size-28 lg:size-32 rounded-full">
                             @if (has_post_thumbnail($person->ID))
                                 {!! get_the_post_thumbnail($person->ID, 'square', [
                                     'class' =>
                                         'h-32 object-center !my-0 block w-32 group-hover:scale-105 ease-in-out transition-transform duration-1000',
                                 ]) !!}
                             @else
-                                <div class="h-32 w-32 bg-beige">
+                                <div class="size-28 lg:size-32 bg-beige">
                                 </div>
                             @endif
                         </div>
@@ -26,20 +26,20 @@
                 @endforeach
             </div>
         @else
-            <div class="space-y-4">
+            <div class="">
                 @foreach ($people as $person)
                     <details x-data="{ open: false }">
                         <summary @click="console.log(open);open = !open" style="font-size: 1em !important;"
-                            class="not-prose group relative flex flex-row items-center gap-2 p-4 transition md:gap-4 md:p-6">
+                            class="not-prose group relative flex flex-row items-center gap-2 p-4 pr-12 transition md:gap-4 md:p-6">
 
-                            <div class="flex-none h-32 w-32  overflow-hidden rounded-full">
+                            <div class="flex-none size-28 lg:size-32  overflow-hidden rounded-full">
                                 @if (has_post_thumbnail($person->ID))
                                     {!! get_the_post_thumbnail($person->ID, 'square', [
                                         'class' =>
-                                            ' h-auto !my-0 block h-32 object-cover w-32 group-hover:scale-105 ease-in-out transition-transform duration-1000',
+                                            ' h-auto !my-0 block size-28 lg:size-32 object-cover  group-hover:scale-105 ease-in-out transition-transform duration-1000',
                                     ]) !!}
                                 @else
-                                    <div class="h-32 w-32 bg-beige ">
+                                    <div class="size-28 lg:size-32 bg-beige ">
 
                                     </div>
                                 @endif
