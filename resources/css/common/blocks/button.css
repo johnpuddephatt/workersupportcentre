@@ -7,7 +7,7 @@
   @apply !flex;
 }
 .wp-block-file:not(:has(> div)) {
-  @apply !inline-flex flex-col lg:flex-row gap-2;
+  @apply !inline-flex flex-row gap-2;
   clear: both;
   float: left;
 }
