@@ -56,7 +56,7 @@
             </div> --}}
                         </summary>
 
-                        <div class="p-4 pt-0 md:p-6 prose">
+                        <div class="p-4  md:p-6 prose">
                             {!! $person->post_content !!}
                         </div>
                     </details>
