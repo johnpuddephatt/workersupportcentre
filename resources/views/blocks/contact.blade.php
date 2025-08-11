@@ -5,7 +5,7 @@
     <div class=" flex items-end container  !mx-0 lg:!mx-auto  relative   ">
         <div>
             <a href="{{ $link }}">
-                <h2 class="type-xl mb-2">
+                <h2 class="type-xl mb-4">
                     {{ $heading }}</h2>
             </a>
             <div class="flex flex-col lg:flex-row gap-4 lg:gap-8">
@@ -18,7 +18,7 @@
                             </div>
                         @endif
                         @if ($contact['text'] ?? false)
-                            <div class="prose">
+                            <div class="prose leading-tight">
                                 {!! Str::of($contact['text'])->replace(
                                         '[tel]',
                                         '<a class="!underline font-semibold" href="tel:' .

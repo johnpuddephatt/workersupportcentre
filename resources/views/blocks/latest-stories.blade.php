@@ -9,7 +9,7 @@
             <h2 class="text-center type-2xl pb-12">{{ $title }}</h2>
         @endif
 
-        <div class=" gap-6 mb-16">
+        <div class=" gap-6 flex flex-col mb-16">
             @forelse ($stories as $post)
                 @include('blocks.story', [
                     'block' => (object) [
