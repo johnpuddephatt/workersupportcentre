@@ -8,7 +8,7 @@
                 <h2 class="type-xl mb-2">
                     {{ $heading }}</h2>
             </a>
-            <div class="flex flex-row gap-8">
+            <div class="flex flex-col lg:flex-row gap-4 lg:gap-8">
 
                 @foreach ($contact_details as $contact)
                     <div class="flex flex-row items-center gap-2">

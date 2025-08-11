@@ -1,4 +1,4 @@
-<div class="wp-block my-8 lg:my-16 {{ $block->classes }}" style="{{ $block->inlineStyle }}">
+<div class="wp-block my-16 lg:my-24 {{ $block->classes }}" style="{{ $block->inlineStyle }}">
     @if ($title)
         <h2 class="type-2xl text-center mb-12">{{ $title }}</h2>
     @endif
