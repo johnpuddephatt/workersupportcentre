@@ -32,7 +32,7 @@
         @else
             <form action="{{ get_permalink() }}" class=" wp-block mx-auto" method="GET">
 
-                <div class="flex justify-between items-center">
+                <div class="flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center">
                     <label for="resource-search" class="sr-only">Search resources</label>
                     <div class="flex flex-grow">
                         <input name="search" type="search"
@@ -71,7 +71,7 @@
     </div>
 </div>
 
-<div class="wp-block my-16 {{ $block->classes }}" style="{{ $block->inlineStyle }}">
+<div class="wp-block px-4 my-16 {{ $block->classes }}" style="{{ $block->inlineStyle }}">
     @forelse ($resources as $resource)
         <x-resource-card :resource="$resource" />
     @empty
