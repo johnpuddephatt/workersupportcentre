@@ -20,7 +20,7 @@
                             @endif
                         </div>
                         <h3 class="type-lg mt-4">{{ $person->post_title }}</h3>
-                        <div class="font-normal">{{ get_field('role_title', $person->ID) }}</div>
+                        <div class="font-normal leading-none">{{ get_field('role_title', $person->ID) }}</div>
 
                     </div>
                 @endforeach
@@ -30,7 +30,7 @@
                 @foreach ($people as $person)
                     <details x-data="{ open: false }">
                         <summary @click="console.log(open);open = !open" style="font-size: 1em !important;"
-                            class="not-prose group relative flex flex-row items-center gap-2 !pt-4 !pb-4 p-4 pr-24 transition md:gap-4 md:p-6">
+                            class="not-prose group relative flex flex-row items-center gap-2 !pt-4 !pb-4 p-4 !pr-24 transition md:gap-4 md:p-6">
 
                             <div class="flex-none size-28 lg:size-32  overflow-hidden rounded-full">
                                 @if (has_post_thumbnail($person->ID))
