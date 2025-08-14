@@ -9,7 +9,7 @@
                 <p>{{ get_field('company_address', 'options') }}</p>
                 <p class="mt-2 flex flex-col lg:flex-row"><a class="text-lime"
                         href="mailto:{{ get_field('company_email', 'options') }}">{{ get_field('company_email', 'options') }}</a>
-                    <span class="hidden lg:inline">|</span> <a class="text-lime"
+                    <span class="hidden lg:inline-block px-1">|</span> <a class="text-lime"
                         href="tel:{{ get_field('company_phone', 'options') }}">{{ get_field('company_phone', 'options') }}</a>
                 </p>
 
