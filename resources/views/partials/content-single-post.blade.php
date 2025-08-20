@@ -1,5 +1,5 @@
 <div class="wp-block bg-beige alignfull  overflow-hidden relative py-16 not-prose">
-    <div class="container">
+    <div class="container alignwide">
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191.87 185.09"
             class="absolute right-1/2 top-1/2 translate-x-16 translate-y-8 w-1/3">
