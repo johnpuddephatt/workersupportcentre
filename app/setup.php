@@ -8,11 +8,22 @@ namespace App;
 
 use Illuminate\Support\Facades\Vite;
 
+
+add_action('admin_menu', function () {
+    remove_menu_page('flamingo');
+    add_submenu_page('wpcf7', 'Flamingo Address', 'Flamingo Address', 'administrator', 'admin.php?page=flamingo', '');
+    add_submenu_page('wpcf7', 'Flamingo Message', 'Flamingo Message', 'administrator', 'admin.php?page=flamingo_inbound', '');
+}, 999);
+
+
 /**
  * Inject styles into the block editor.
  *
  * @return array
  */
+
+
+
 add_filter('block_editor_settings_all', function ($settings) {
     $style = Vite::asset('resources/css/editor.css');
 
@@ -273,10 +284,4 @@ add_action('admin_init', function () {
             return $options;
         });
     }
-
-    add_action('admin_menu', function () {
-        remove_menu_page('flamingo');
-        add_submenu_page('wpcf7', 'Flamingo Address', 'Flamingo Address', 'administrator', 'admin.php?page=flamingo', '');
-        add_submenu_page('wpcf7', 'Flamingo Message', 'Flamingo Message', 'administrator', 'admin.php?page=flamingo_inbound', '');
-    }, 999);
 });
