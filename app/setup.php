@@ -273,4 +273,10 @@ add_action('admin_init', function () {
             return $options;
         });
     }
+
+    add_action('admin_menu', function () {
+        remove_menu_page('flamingo');
+        add_submenu_page('wpcf7', 'Flamingo Address', 'Flamingo Address', 'administrator', 'admin.php?page=flamingo', '');
+        add_submenu_page('wpcf7', 'Flamingo Message', 'Flamingo Message', 'administrator', 'admin.php?page=flamingo_inbound', '');
+    }, 999);
 });
