@@ -7,9 +7,9 @@
   @apply !flex;
 }
 .wp-block-file:not(:has(> div)) {
-  @apply !inline-flex flex-row gap-2;
-  clear: both;
-  float: left;
+  @apply flex flex-row gap-2;
+  /* clear: both; */
+  /* float: left; */
 }
 
 .wp-block-file:has(> div)::after {
@@ -34,7 +34,7 @@
 }
 
 .wp-block-file__button {
-  @apply lg:-mr-16 p-0 pl-4 bg-lime !text-black flex  items-center;
+  @apply lg:-mr-16 p-0 pl-4 bg-lime !text-black inline-flex  items-center;
 }
 
 .wp-block-file:hover > a:first-child,
