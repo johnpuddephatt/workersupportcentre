@@ -1,5 +1,5 @@
 <div
-    class="wp-block container grid lg:grid-cols-2  my-6 lg:my-12 gap-4 {{ $block->classes }} {{ $align == 'center' ? 'items-center' : '' }}">
+    class="wp-block container grid lg:grid-cols-2  my-6 lg:my-12 gap-4 lg:gap-8 {{ $block->classes }} {{ $align == 'center' ? 'items-center' : '' }}">
     <div class="{{ $block->style == 'flipped' ? 'order-2' : '' }} max-lg:order-2">
 
         @foreach ($accordion as $accordionItem)
