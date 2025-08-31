@@ -4,7 +4,7 @@
 
         @foreach ($accordion as $accordionItem)
             <details class="accordion-item  ">
-                <summary class="accordion-header"><strong>{{ $loop->index + 1 }}. </strong>
+                <summary class="accordion-header"><strong class="!text-inherit">{{ $loop->index + 1 }}. </strong>
                     {{ $accordionItem['heading'] }}
                 </summary>
                 <div class="accordion-content">{!! $accordionItem['content'] !!}</div>
