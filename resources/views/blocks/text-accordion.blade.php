@@ -1,12 +1,13 @@
-<div class="wp-block container grid lg:grid-cols-2  my-6 lg:my-12 gap-4 {{ $block->classes }} items-start">
+<div
+    class="wp-block container grid lg:grid-cols-2  my-6 lg:my-12 gap-4 {{ $block->classes }} {{ $align == 'center' ? 'items-center' : '' }}">
 
-    <div class="prose">
+    <div class="prose border-l border-lime pl-4 lg:pl-8">
         <InnerBlocks template="{{ $block->template }}" />
     </div>
     <div>
 
         @foreach ($accordion as $accordionItem)
-            <details class="accordion-item">
+            <details class="accordion-item  {{ $block->style == 'flipped' ? 'order-2' : '' }}">
                 <summary class="accordion-header"><strong>{{ $loop->index + 1 }}. </strong>
                     {{ $accordionItem['heading'] }}
                 </summary>

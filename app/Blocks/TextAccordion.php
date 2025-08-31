@@ -156,6 +156,7 @@ class TextAccordion extends Block
     {
         return [
             'accordion' => get_field('accordion'),
+            'align' => get_field('align'),
 
 
         ];
@@ -178,7 +179,17 @@ class TextAccordion extends Block
                 'toolbar' => 'simple',
                 'media_upload' => 0,
             ])
-            ->endRepeater();
+            ->endRepeater()
+
+            ->addSelect('align', [
+                'label' => __('Alignment'),
+                'choices' => [
+                    'top' => __('Top'),
+                    'center' => __('Center'),
+
+                ],
+                'default_value' => 'stretch',
+            ]);
 
         return $fields->build();
     }
