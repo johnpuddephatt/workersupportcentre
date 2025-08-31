@@ -4,10 +4,10 @@
     <div class="prose border-l border-lime pl-4 lg:pl-8">
         <InnerBlocks template="{{ $block->template }}" />
     </div>
-    <div>
+    <div class="{{ $block->style == 'flipped' ? 'order-2' : '' }}">
 
         @foreach ($accordion as $accordionItem)
-            <details class="accordion-item  {{ $block->style == 'flipped' ? 'order-2' : '' }}">
+            <details class="accordion-item  ">
                 <summary class="accordion-header"><strong>{{ $loop->index + 1 }}. </strong>
                     {{ $accordionItem['heading'] }}
                 </summary>
