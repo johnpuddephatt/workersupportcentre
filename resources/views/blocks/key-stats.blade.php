@@ -16,9 +16,11 @@
             <div class="flex flex-col lg:flex-row  justify-center lg:mt-24 gap-8 lg:gap-24 xl:gap-32">
                 @foreach ($stats as $stat)
                     <div class="basis-[100%]">
-
+                        <div class="text-center font-bold mb-2 lg:-mt-24 prose max-w-xs mx-auto lg:max-w-xl">
+                            {!! $stat['pre'] !!}&nbsp; ??
+                        </div>
                         <div
-                            class="mx-auto size-48 flex items-center justify-center flex-col bg-teal p-4 text-center rounded-full lg:-mt-24 mb-4">
+                            class="mx-auto size-48 flex items-center justify-center flex-col bg-teal p-4 text-center rounded-full  mb-4">
                             <h3 class="text-6xl font-black mt-2 antialiased tracking-tighter text-white leading-none">
                                 {{ $stat['number'] }}</h3>
                             </h3>

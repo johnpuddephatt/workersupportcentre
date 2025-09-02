@@ -183,6 +183,7 @@ class Stats extends Block
                 'min' => 2,
                 'layout' => 'block',
             ])
+            ->addText('pre')
             ->addText('number')
             ->addText('description')
             ->endRepeater();

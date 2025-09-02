@@ -4,7 +4,7 @@
             d="M41.43 364.78S.12 361.88.2 308.73c.17-113.14 262.81 13.66 232.59-140.38C204.3 23.14 286.43.19 286.43.19" />
     </svg>{{-- $block->block->align  --}}
 
-    <div class="mx-auto container wp-block {{ $block->block->align == 'full' ? 'alignwide' : '!max-w-6xl' }}  relative pt-8  lg:pt-24 not-prose"
+    <div class="mx-auto container wp-block {{ $block->block->align == 'full' ? 'alignwide' : null }} {{ $block->block->align == 'wide' ? '!max-w-6xl' : null }}  relative pt-8  lg:pt-24 not-prose"
         style="{{ $block->inlineStyle }}">
 
         <div class="relative">

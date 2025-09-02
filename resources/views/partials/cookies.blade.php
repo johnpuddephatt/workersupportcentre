@@ -19,7 +19,8 @@
         const acceptButton = document.querySelector('.accept-cookies');
         const declineButton = document.querySelector('.decline-cookies');
 
-        if (localStorage.getItem('cookiesAccepted') === 'true') {
+        if (localStorage.getItem('cookiesAccepted') === 'true' || localStorage.getItem('cookiesAccepted') ===
+            'false') {
             cookieNotice.style.display = 'none';
         }
 
