@@ -17,7 +17,7 @@
                 @foreach ($stats as $stat)
                     <div class="basis-[100%]">
                         <div class="text-center font-bold mb-2 lg:-mt-24 prose max-w-xs mx-auto lg:max-w-xl">
-                            {!! $stat['pre'] !!}&nbsp; ??
+                            {!! $stat['pre'] !!}&nbsp;
                         </div>
                         <div
                             class="mx-auto size-48 flex items-center justify-center flex-col bg-teal p-4 text-center rounded-full  mb-4">
