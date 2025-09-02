@@ -50,7 +50,7 @@
             <div class="grid lg:grid-cols-3 mt-24 gap-20 lg:gap-12">
                 @foreach ($donations as $donation)
                     <a href="{{ Str::of($donate_url)->replace('{amount}', $donation['amount']) }}" target="_blank"
-                        class="border-orange bg-white relative z-10 border rounded-lg p-8">
+                        class="border-orange bg-white relative z-10 border rounded-lg {{ $block->block->align ? 'p-8' : 'p-2' }}">
 
                         <div
                             class="mx-auto size-48 flex items-center justify-center flex-col bg-orange p-4 text-center rounded-full -mt-24 mb-4">
