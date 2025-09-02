@@ -8,7 +8,7 @@
         style="{{ $block->inlineStyle }}">
 
         <div class="relative">
-            <div class="flex gap-8 flex-col lg:flex-row">
+            <div class="flex gap-8 flex-col items-end lg:flex-row">
                 <div class="flex-1">
                     <h2
                         class="type-2xl leading-tight text-balance  {{ $block->block->align ? 'mb-8 lg:mb-20 ' : 'mb-6 md:mb-8' }}">
