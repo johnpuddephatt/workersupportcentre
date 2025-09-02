@@ -10,7 +10,8 @@
         <div class="relative">
             <div class="flex gap-8 flex-col lg:flex-row">
                 <div class="flex-1">
-                    <h2 class="type-2xl  text-balance  {{ $block->block->align ? 'mb-8 lg:mb-20 ' : 'mb-6 md:mb-8' }}">
+                    <h2
+                        class="type-2xl leading-tight text-balance  {{ $block->block->align ? 'mb-8 lg:mb-20 ' : 'mb-6 md:mb-8' }}">
                         {{ $heading }}</h2>
                     <div class=" prose max-w-xl">{!! $content !!}</div>
                 </div>
@@ -42,7 +43,7 @@
 
     <div class="alignfull h-px bg-orange"></div>
 
-    <div class="mx-auto container wp-block {{ $block->block->align == 'full' ? 'alignwide' : '!max-w-6xl' }} pt-px z-10 relative bg-white pb-12 lg:pb-24 not-prose"
+    <div class="mx-auto container wp-block {{ $block->block->align == 'full' ? 'alignwide' : null }} {{ $block->block->align == 'wide' ? '!max-w-6xl' : null }}  } pt-px z-10 relative bg-white pb-12 lg:pb-24 not-prose"
         style="{{ $block->inlineStyle }}">
         <div class="relative">
 
