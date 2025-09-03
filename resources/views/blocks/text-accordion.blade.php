@@ -6,7 +6,7 @@
             <details class="accordion-item  ">
                 <summary class="accordion-header">
                     <span
-                        class="h-10 mr-2 w-10 rounded-full font-bold !text-teal inline-flex bg-mint items-center justify-center">
+                        class="h-10 mr-2 w-10 rounded-full font-bold !text-teal inline-block bg-mint leading-[2.7] text-center">
                         {{ $loop->index + 1 }}</span>
                     {{ $accordionItem['heading'] }}
                 </summary>
