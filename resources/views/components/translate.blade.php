@@ -19,6 +19,10 @@
 </script>
 
 <style>
+    #google_translate_element {
+        width: 11em;
+    }
+
     .goog-te-gadget {
         font-size: 1rem;
         color: inherit;
