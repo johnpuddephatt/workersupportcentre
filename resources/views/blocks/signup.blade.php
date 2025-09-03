@@ -6,7 +6,7 @@
         class=" lg:px-0 container w-content !mx-0 lg:!mx-auto  relative flex flex-col lg:items-center-safe gap-8 md:flex-row">
 
         <div class="flex-grow">
-            <h2 class="type-2xl type-underlined decoration-black mb-6  md:mb-8">
+            <h2 class="type-2xl type-underlined leading-tight decoration-black mb-6  md:mb-8">
                 {{ $heading }}</h2>
             <div class=" ">{!! $content !!}</div>
             @if ($buttons)
