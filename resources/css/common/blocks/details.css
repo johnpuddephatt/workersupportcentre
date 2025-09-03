@@ -62,3 +62,7 @@ details[open] summary {
 summary:hover {
   @apply bg-beige/20 border-black !border-b-transparent;
 }
+
+summary:hover::after {
+  @apply bg-lime;
+}
