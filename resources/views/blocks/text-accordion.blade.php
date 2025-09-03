@@ -4,7 +4,10 @@
 
         @foreach ($accordion as $accordionItem)
             <details class="accordion-item  ">
-                <summary class="accordion-header"><strong class="!text-inherit">{{ $loop->index + 1 }}. </strong>
+                <summary class="accordion-header">
+                    <span
+                        class="h-10 mr-2 w-10 rounded-full font-bold !text-inherit inline-flex bg-mint items-center justify-center">
+                        {{ $loop->index + 1 }}. </span>
                     {{ $accordionItem['heading'] }}
                 </summary>
                 <div class="accordion-content">{!! $accordionItem['content'] !!}</div>
