@@ -27,7 +27,7 @@
         font-family: inherit;
         width: 11rem;
         overflow: hidden;
-        margin-top: -0.5rem;
+        transform: translateY(-0.5rem);
     }
 
     .goog-te-gadget+.goog-te-gadget {
