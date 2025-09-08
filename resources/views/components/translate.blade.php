@@ -1,4 +1,4 @@
-<div class="overflow-hidden ml-8 !w-36 lg:!w-44 max-lg:right-8 -translate-y-2 max-md:right-4 max-lg:absolute max-md:top-26 max-lg:top-28"
+<div class="overflow-hidden ml-8 !w-40 lg:!w-44 max-lg:right-8 -translate-y-2 max-md:right-4 max-lg:absolute max-md:top-26 max-lg:top-28"
     id="google_translate_element">
 </div>
 
@@ -47,7 +47,7 @@
     }
 
     .goog-te-combo {
-        width: 9rem;
+        width: 10rem;
         font-family: inherit;
         font-size: 0.95rem;
         margin: 0 0 0 !important;
