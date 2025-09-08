@@ -48,12 +48,18 @@
     }
 
     .goog-te-combo {
-        width: 11rem;
+        width: 9rem;
         font-family: inherit;
         font-size: 0.95rem;
         margin: 0 0 0 !important;
         border: 1px solid #ccc;
         padding: 0 0.5rem;
+    }
+
+    @media (min-width: 1024px) {
+        .goog-te-gadget {
+            width: 11rem;
+        }
     }
 
     .goog-te-gadget-simple::before {
