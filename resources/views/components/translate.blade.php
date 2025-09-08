@@ -1,4 +1,4 @@
-<div class="overflow-hidden ml-8 !w-40 lg:!w-44 max-lg:right-8 -translate-y-2 max-md:right-4 max-lg:absolute max-md:top-26 max-lg:top-28"
+<div class="overflow-hidden ml-8 !w-36 lg:!w-44 max-lg:right-8 -translate-y-2 max-md:right-4 max-lg:absolute max-md:top-26 max-lg:top-28"
     id="google_translate_element">
 </div>
 
@@ -47,17 +47,17 @@
     }
 
     .goog-te-combo {
-        width: 10rem;
+        width: 9rem;
         font-family: inherit;
         font-size: 0.95rem;
         margin: 0 0 0 !important;
         border: 1px solid #ccc;
-        padding: 0 0.5rem;
     }
 
     @media (min-width: 1024px) {
         .goog-te-combo {
             width: 11rem;
+            padding: 0 0.5rem;
         }
     }
 
