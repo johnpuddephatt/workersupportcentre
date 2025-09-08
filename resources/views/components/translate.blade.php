@@ -1,4 +1,5 @@
-<div class="ml-8 max-lg:right-8 max-md:right-4 max-lg:absolute max-md:top-26 max-lg:top-28" id="google_translate_element">
+<div class="ml-8 w-36 lg:w-44 max-lg:right-8 max-md:right-4 max-lg:absolute max-md:top-26 max-lg:top-28"
+    id="google_translate_element">
 </div>
 
 <script type="text/javascript">
@@ -20,10 +21,6 @@
 </script>
 
 <style>
-    #google_translate_element {
-        width: 11em;
-    }
-
     .goog-te-gadget {
         font-size: 1rem;
         color: inherit;
