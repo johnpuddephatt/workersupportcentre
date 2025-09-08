@@ -40,10 +40,14 @@
 
         </a>
 
-        <button @click="menuOpen = true" :class="{ 'hidden': menuOpen }"
-            class="ml-auto inline-block border px-4 pt-1.5 pb-1 font-semibold !no-underline transition lg:hidden"
-            aria-label="Open navigation menu" title="Open navigation menu">Menu
-        </button>
+        <div class="ml-auto flex-col gap-1 lg:hidden flex items-end justify-end">
+            <x-translate />
+
+            <button @click="menuOpen = true" :class="{ 'hidden': menuOpen }"
+                class="inline-block border px-4 pt-1.5 pb-1 font-semibold !no-underline transition"
+                aria-label="Open navigation menu" title="Open navigation menu">Menu
+            </button>
+        </div>
 
         @if ($primary_navigation)
 
