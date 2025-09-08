@@ -1,4 +1,4 @@
-<div class="overflow-hidden ml-8 !w-36 lg:!w-44 max-lg:right-8 max-md:right-4 max-lg:absolute max-md:top-26 max-lg:top-28"
+<div class="overflow-hidden ml-8 !w-36 lg:!w-44 max-lg:right-8 -translate-y-2 max-md:right-4 max-lg:absolute max-md:top-26 max-lg:top-28"
     id="google_translate_element">
 </div>
 
@@ -27,7 +27,6 @@
         font-family: inherit;
         width: 11rem;
         overflow: hidden;
-        transform: translateY(-0.5rem);
     }
 
     .goog-te-gadget+.goog-te-gadget {
