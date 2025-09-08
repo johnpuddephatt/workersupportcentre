@@ -1,4 +1,5 @@
-<div id="google_translate_element"></div>
+<div class="ml-8 max-lg:right-8 max-md:right-4 max-lg:absolute max-md:top-26 max-lg:top-28" id="google_translate_element">
+</div>
 
 <script type="text/javascript">
     function googleTranslateElementInit() {
@@ -52,7 +53,7 @@
     .goog-te-combo {
         width: 11rem;
         font-family: inherit;
-        font-size: 1rem;
+        font-size: 0.95rem;
         margin: 0 0 0 !important;
         border: 1px solid #ccc;
         padding: 0 0.5rem;

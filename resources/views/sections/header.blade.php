@@ -1,5 +1,5 @@
 <header class="">
-    <div class="container pt-6 pb-5 flex justify-center lg:justify-between bg-mint/50 max-w-none">
+    <div class="container pt-6 pb-5 flex justify-center lg:justify-start bg-mint/50 max-w-none">
         <div class="flex  gap-2 font-semibold items-center">
             @if (get_field('header_text', 'options'))
                 <div class=" bg-teal text-white rounded-full p-1 -mt-1">
@@ -18,7 +18,7 @@
             @endif
         </div>
         @if ($secondary_navigation)
-            <nav class="hidden lg:block order-10 lg:order-none">
+            <nav class="ml-auto hidden lg:block order-10 lg:order-none">
                 <ul class="flex flex-col justify-end text-2xl lg:flex-row lg:text-base gap-2 lg:gap-8 ">
                     @foreach ($secondary_navigation as $item)
                         <li>
@@ -26,10 +26,11 @@
                         </li>
                     @endforeach
 
-                    <x-translate />
                 </ul>
             </nav>
         @endif
+        <x-translate />
+
     </div>
 
     <div class="py-6 lg:py-12 container flex items-end max-w-none  ">
@@ -41,10 +42,9 @@
         </a>
 
         <div class="ml-auto flex-col gap-1 lg:hidden flex items-end justify-end">
-            <x-translate />
 
             <button @click="menuOpen = true" :class="{ 'hidden': menuOpen }"
-                class="inline-block border px-4 pt-1.5 pb-1 font-semibold !no-underline transition"
+                class="inline-block border max-lg:translate-y-1 px-4 pt-1 pb-0.5 font-semibold !no-underline transition"
                 aria-label="Open navigation menu" title="Open navigation menu">Menu
             </button>
         </div>
@@ -86,7 +86,6 @@
                                 </li>
                             @endforeach
 
-                            <x-translate />
                         </ul>
                     </nav>
                 @endif
