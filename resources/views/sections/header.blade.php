@@ -36,12 +36,12 @@
         <a label="Go to homepage"
             class="flex flex-row items-center gap-1.5 text-2xl font-bold tracking-tight lg:text-3xl"
             href="{{ home_url('/') }}">
-            <x-logo class="w-48 md:w-52 xl:w-64 2xl:w-[17rem]" />
+            <x-logo class="w-40 md:w-52 xl:w-64 2xl:w-[17rem]" />
 
         </a>
 
         <button @click="menuOpen = true" :class="{ 'hidden': menuOpen }"
-            class="ml-auto inline-block rounded-small border-2 border-blue-bright px-6 py-2 font-semibold !no-underline transition duration-300 hover:bg-green hover:bg-opacity-20 lg:hidden"
+            class="ml-auto inline-block border px-4 py-1.5 font-semibold !no-underline transition lg:hidden"
             aria-label="Open navigation menu" title="Open navigation menu">Menu
         </button>
 
