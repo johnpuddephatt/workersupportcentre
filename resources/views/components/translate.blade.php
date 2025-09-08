@@ -56,7 +56,7 @@
     }
 
     @media (min-width: 1024px) {
-        .goog-te-gadget {
+        .goog-te-combo {
             width: 11rem;
         }
     }
