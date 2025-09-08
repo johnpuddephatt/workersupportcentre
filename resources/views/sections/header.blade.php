@@ -36,7 +36,7 @@
         <a label="Go to homepage"
             class="flex flex-row items-center gap-1.5 text-2xl font-bold tracking-tight lg:text-3xl"
             href="{{ home_url('/') }}">
-            <x-logo class="w-40 md:w-52 xl:w-64 2xl:w-[17rem]" />
+            <x-logo class="w-44 md:w-52 xl:w-64 2xl:w-[17rem]" />
 
         </a>
 
