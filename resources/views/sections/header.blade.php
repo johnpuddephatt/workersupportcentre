@@ -41,7 +41,7 @@
         </a>
 
         <button @click="menuOpen = true" :class="{ 'hidden': menuOpen }"
-            class="ml-auto inline-block border px-4 py-1.5 font-semibold !no-underline transition lg:hidden"
+            class="ml-auto inline-block border px-4 pt-1.5 pb-1 font-semibold !no-underline transition lg:hidden"
             aria-label="Open navigation menu" title="Open navigation menu">Menu
         </button>
 
