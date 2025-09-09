@@ -38,7 +38,7 @@ class ThemeOptions extends Field
                 'layout' => 'table',
             ])
             ->addSelect('Type')
-            ->addChoices(['Twitter', 'Facebook', 'Instagram', 'LinkedIn', 'Bluesky', 'Threads'])
+            ->addChoices(['Twitter', 'Facebook', 'Instagram', 'LinkedIn', 'Bluesky', 'Threads', 'Tiktok'])
             ->addUrl('link')
             ->endRepeater()
             ->addText('company_info')
