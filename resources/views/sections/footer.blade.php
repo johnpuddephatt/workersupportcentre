@@ -19,12 +19,12 @@
             <div class="flex mb-8 gap-2">
                 <a href="https://www.livingwage.org.uk/" target="_blank">
                     <img src="{{ str_replace('build/', '', asset('living-wage.png')) }}" alt="Living Wage"
-                        class=" w-28 h-auto" />
+                        class="w-20 lg:w-28 h-auto" />
                 </a>
 
                 <a href="https://www.adviceuk.org.uk/" target="_blank">
                     <img src="{{ str_replace('build/', '', asset('advice-uk.png')) }}" alt="Advice UK"
-                        class=" w-52  h-auto" />
+                        class=" w-40 lg:w-52  h-auto" />
                 </a>
             </div>
 
