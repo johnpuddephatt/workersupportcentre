@@ -23,7 +23,7 @@
 
       </div>
       <span
-          class="ml-auto mr-4 inline-block duration-500 group-hover:translate-x-4 transition rounded-full bg-lime p-2.5 group-hover:bg-lime">
-          @svg('arrow-right', ' block w-10 h-10')
+          class="ml-auto lg:mr-4 inline-block duration-500 group-hover:translate-x-4 transition rounded-full bg-lime p-2.5 group-hover:bg-lime">
+          @svg('arrow-right', ' block size-6 lg:size-10')
       </span>
   </a>
