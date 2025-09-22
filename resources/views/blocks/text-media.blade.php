@@ -21,7 +21,7 @@
 
     </div>
 
-    <div class="prose border-l border-lime pl-4 lg:pl-8">
+    <div class="prose lg:border-l lg:border-lime lg:pl-8">
         <InnerBlocks template="{{ $block->template }}" />
     </div>
 
