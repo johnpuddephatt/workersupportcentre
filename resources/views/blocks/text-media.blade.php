@@ -2,7 +2,7 @@
     class="wp-block container grid lg:grid-cols-2 my-8 lg:my-24 gap-12 {{ $block->classes }} {{ $align == 'center' ? 'items-center' : '' }}">
 
     <div
-        class="{{ $block->style == 'flipped' ? 'order-2' : '' }} relative flex {{ match ($align) {
+        class="{{ $block->style == 'flipped' ? 'order-2' : '' }} max-lg:order-2 relative flex {{ match ($align) {
             'top' => 'items-start',
             'center' => '',
             'bottom' => 'items-end',
