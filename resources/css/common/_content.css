@@ -61,3 +61,7 @@
 .alignwide {
   @apply container;
 }
+
+.wp-block-text-media h2 {
+  @apply mb-6 lg:mb-12;
+}
