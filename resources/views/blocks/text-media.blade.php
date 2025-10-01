@@ -2,7 +2,7 @@
     class="not-prose wp-block container grid lg:grid-cols-2 my-8 lg:my-24 gap-8 lg:gap-12 {{ $block->classes }} {{ $align == 'center' ? 'items-center' : '' }}">
 
     <div
-        class="{{ $block->style == 'flipped' ? 'order-2' : '' }} max-lg:order-2 relative flex {{ match ($align) {
+        class="{{ $block->style == 'flipped' ? 'order-2' : '' }} max-lg:order-2 relative lg:flex {{ match ($align) {
             'top' => 'items-start',
             'center' => '',
             'bottom' => 'items-end',
@@ -15,7 +15,7 @@
                     'w-full ' .
                     ($image_crop == 'circle' && $align !== 'stretch' ? 'mx-auto max-w-sm rounded-full' : '') .
                     ' ' .
-                    ($align == 'stretch' ? ' inset-0 absolute w-full h-full object-cover object-center' : ' '),
+                    ($align == 'stretch' ? ' lg:inset-0 lg:absolute w-full lg:h-full lg:object-cover lg:object-center' : ' '),
             ]) !!}
         @endif
 
