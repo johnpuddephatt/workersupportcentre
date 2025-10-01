@@ -1,5 +1,5 @@
 <div class="wp-block  bg-beige mb-8 overflow-hidden relative lg:py-16 not-prose">
-    <div class="container max-lg:!px-0 alignwide">
+    <div class="container max-lg:!max-w-none max-lg:!px-0 alignwide">
 
         <div
             class=" relative lg:items-center flex flex-col-reverse  gap-8 lg:gap-12 xl:gap-16 2xl:gap-24 lg:grid lg:grid-cols-2">
