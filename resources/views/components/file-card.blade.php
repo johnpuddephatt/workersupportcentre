@@ -1,7 +1,7 @@
 @props(['href', 'title', 'subtitle', 'size', 'extension'])
 @if (isset($href))
 
-    <a target="_blank" href="{{ $href }}"
+    <a target="_blank" href="{{ $href }}" rel="noopener noreferrer" download
         class="group flex max-w-4xl flex-row items-center gap-2 rounded bg-white p-4 lg:p-8 relative">
         <div class="absolute -top-3 -bottom-3 w-px bg-black left-0"></div>
 
