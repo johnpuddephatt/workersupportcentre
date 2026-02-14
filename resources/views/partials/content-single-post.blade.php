@@ -33,7 +33,9 @@
 <div class="container alignwide  ">
 
     <div class="py-16 pb-40 prose post-content max-w-none lg:border-r lg:border-r-lime xl:prose-lg">
-        {!! get_the_content() !!}
+
+        @php(the_content())
+
     </div>
 
 </div>
