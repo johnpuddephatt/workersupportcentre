@@ -9,7 +9,7 @@
             default => 'items-stretch',
         } }}">
         @if ($video)
-            <div class="relative w-full h-0 rounded-lg pb-[53.25%]">
+            <div class="relative w-full h-0 rounded-lg pb-[56.25%]">
                 <iframe class="absolute inset-0 w-full !aspect-auto !h-full" src="{{ $video }}" frameborder="0"
                     allowfullscreen></iframe>
             </div>
