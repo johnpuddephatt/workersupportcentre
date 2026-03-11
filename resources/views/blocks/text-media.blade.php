@@ -8,7 +8,12 @@
             'bottom' => 'items-end',
             default => 'items-stretch',
         } }}">
-        @if ($image)
+        @if ($video)
+            <div class="relative w-full h-0 rounded-lg pb-[53.25%]">
+                <iframe class="absolute inset-0 w-full !aspect-auto !h-full" src="{{ $video }}" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        @elseif ($image)
             {!! wp_get_attachment_image($image, $image_crop == 'landscape' ? 'landscape' : 'square-xl', false, [
                 'sizes' => '(min-width: 1200px) 40vw, (min-width: 800px) 55vw, 75vw',
                 'class' =>

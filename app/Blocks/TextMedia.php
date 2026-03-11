@@ -158,6 +158,13 @@ class TextMedia extends Block
             'image' => get_field('image'),
             'image_crop' => get_field('image_crop'),
             'align' => get_field('align'),
+            // 'video' => get_field('video'),
+            // parse youtube ID from get_field('video) and return embed URL
+            'video' => get_field('video') ? 'https://www.youtube.com/embed/' . preg_replace(
+                '/^.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/',
+                '$1',
+                get_field('video')
+            ) : null,
         ];
     }
 
@@ -171,6 +178,10 @@ class TextMedia extends Block
         $fields
             ->addImage('image', [
                 'return_format' => 'id',
+            ])
+            ->addUrl('video', [
+                'label' => __('Video URL'),
+                'instructions' => __('Add a Youtube URL to display a video instead of an image.'),
             ])
             ->addSelect('image_crop', [
                 'label' => __('Image Crop'),
