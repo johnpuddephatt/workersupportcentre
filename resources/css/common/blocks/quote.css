@@ -18,7 +18,7 @@
 }
 
 .wp-block-quote cite {
-  @apply !not-italic text-right text-lg text-black font-semibold;
+  @apply !not-italic tracking-normal text-right text-lg text-black font-semibold;
 }
 
 .wp-block-quote.has-background {

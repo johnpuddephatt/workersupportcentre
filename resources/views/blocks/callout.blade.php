@@ -1,4 +1,4 @@
-<div class=" lg:my-24 wp-block {{ $block->classes }} {{ $block->style == 'alternative' ? 'bg-teal text-beige' : 'bg-beige' }}
+<div class="my-8 lg:my-24 wp-block {{ $block->classes }} {{ $block->style == 'alternative' ? 'bg-teal text-beige' : 'bg-beige' }}
 {{ $block->block->align !== 'full' ? 'md:px-12' : '' }} overflow-hidden  relative py-12 md:py-16 not-prose"
     style="{{ $block->inlineStyle }}">
 
